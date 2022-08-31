@@ -1,33 +1,35 @@
 // Abstracts
-@import './abstracts/variables';
-@import './abstracts/utils';
-@import './abstracts/mixins';
+@use "./abstracts/variables" as *;
+@use "./abstracts/utils" as *;
+@use "./abstracts/mixins" as *;
 // Base
-@import './base/base';
-@import './base/typography';
-@import './base/normalize';
+@use "./base/base" as *;
+@use "./base/typography" as *;
 
 // COMPONENTS
-@import './components/btn';
-@import './components/card';
-@import './components/dropdown';
+@use "./components/btn" as *;
+@use "./components/card" as *;
+@use "./components/dropdown" as *;
 
 // LAYOUT
-@import './layout/header';
-@import './layout/nav';
-@import './layout/footer';
-@import './layout/forms';
-@import './layout/list';
+@use "./layout/header" as *;
+@use "./layout/nav" as *;
+@use "./layout/footer" as *;
+@use "./layout/forms" as *;
+@use "./layout/list" as *;
 
 // PAGES
-@import './pages/home';
-@import './pages/about';
-@import './pages/contact';
+@use "./pages/home" as *;
+@use "./pages/about" as *;
+@use "./pages/contact" as *;
 
-// THEMES
-@import './themes/theme';
-@import './themes/dark';
-
-// VENDORS
-@import './vendors/bootstrap';
-@import './vendors/semantic-ui';
+.main {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets//images/bg-hero.jpg");
+	// background-image: url("../assets//images/bg-hero.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 96rem;
+  padding: 10rem 0;
+  // filter: brightness(70%);
+}
