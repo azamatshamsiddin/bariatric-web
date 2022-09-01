@@ -326,7 +326,136 @@
 		justify-content: space-between;
 	}
 
-	&__img{
+	&__img {
 		opacity: 0.35;
+	}
+}
+
+// ============= Section Contact================
+
+.contact {
+	padding: 6rem 0;
+	background-color: $clr-grey;
+	&__content {
+		margin-top: 4rem;
+		display: flex;
+		gap: 4rem;
+	}
+	&__links {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		max-width: 40.8rem;
+		padding: 2rem;
+		background-color: #fefefe;
+		box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.08);
+		border-radius: 3rem;
+	}
+	&__img {
+		padding: 1.6rem;
+		text-align: center;
+		border: 2px dashed $clr-blue;
+		border-radius: 50%;
+	}
+	&__text {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	&__title {
+		font-family: $font-roboto-sans;
+		font-weight: 700;
+		font-size: 2.4rem;
+		line-height: 2.8rem;
+		letter-spacing: -0.01em;
+		text-transform: uppercase;
+		color: $clr-red;
+	}
+	&__link {
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+		color: $clr-red;
+	}
+}
+
+.form {
+	width: 100%;
+	background-color: #fefefe;
+	box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.08);
+	border-radius: 3rem;
+	padding: 4rem;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 3rem;
+	&__inputs {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		gap: 3rem;
+	}
+	&__input {
+		flex: 1;
+		outline: none;
+		border: 1px solid $clr-grey;
+		background-color: $clr-grey;
+		border-radius: 2rem;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		padding: 1.5rem;
+
+		&::placeholder {
+			font-size: 1.8rem;
+			line-height: 2.1rem;
+			color: #a7a8a9;
+		}
+
+		&--light {
+			background-color: $clr-white;
+			border: 1px solid #a7a8a9;
+		}
+	}
+	&__textarea {
+		width: 100%;
+		background-color: #f4f4f8;
+		border-radius: 2rem;
+		border: none;
+		resize: none;
+		padding: 1.5rem;
+		min-height: 7rem;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		outline: none;
+		font-family: $font-roboto;
+		&::placeholder {
+			font-size: 1.8rem;
+			line-height: 2.1rem;
+			color: #a7a8a9;
+		}
+	}
+	&__checkbox {
+width: 1.6rem;
+height: 1.6rem;
+	}
+
+	&__accept {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+	}
+	&__accept-text,
+	&__link {
+		color: $clr-red;
+		font-size: 1.8rem;
+	}
+	&__link {
+		color: #229ed9;
+	}
+	&__btn {
 	}
 }

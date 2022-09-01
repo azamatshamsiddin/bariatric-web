@@ -13,6 +13,10 @@ html {
   box-sizing: border-box;
 }
 
+address {
+  font-style: normal;
+}
+
 img {
   vertical-align: middle;
 }
@@ -61,6 +65,9 @@ body {
   border-radius: 10rem;
   text-decoration: none;
   color: unset;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 .btn:hover {
   color: inherit;
@@ -79,7 +86,6 @@ body {
 .btn--red {
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
-  line-height: 2.1rem;
   background-color: #7f2941;
   color: #aec5ce;
   padding: 1.5rem 3rem;
@@ -514,6 +520,127 @@ body {
 }
 .brands__img {
   opacity: 0.35;
+}
+
+.contact {
+  padding: 6rem 0;
+  background-color: #f4f4f8;
+}
+.contact__content {
+  margin-top: 4rem;
+  display: flex;
+  gap: 4rem;
+}
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 40.8rem;
+  padding: 2rem;
+  background-color: #fefefe;
+  box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.08);
+  border-radius: 3rem;
+}
+.contact__img {
+  padding: 1.6rem;
+  text-align: center;
+  border: 2px dashed #aec5ce;
+  border-radius: 50%;
+}
+.contact__text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contact__title {
+  font-family: "Roboto Serif", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7f2941;
+}
+.contact__link {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #7f2941;
+}
+
+.form {
+  width: 100%;
+  background-color: #fefefe;
+  box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.08);
+  border-radius: 3rem;
+  padding: 4rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+}
+.form__inputs {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 3rem;
+}
+.form__input {
+  flex: 1;
+  outline: none;
+  border: 1px solid #f4f4f8;
+  background-color: #f4f4f8;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  padding: 1.5rem;
+}
+.form__input::placeholder {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #a7a8a9;
+}
+.form__input--light {
+  background-color: #fff;
+  border: 1px solid #a7a8a9;
+}
+.form__textarea {
+  width: 100%;
+  background-color: #f4f4f8;
+  border-radius: 2rem;
+  border: none;
+  resize: none;
+  padding: 1.5rem;
+  min-height: 7rem;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+.form__textarea::placeholder {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #a7a8a9;
+}
+.form__checkbox {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.form__accept {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.form__accept-text, .form__link {
+  color: #7f2941;
+  font-size: 1.8rem;
+}
+.form__link {
+  color: #229ed9;
 }
 
 /*# sourceMappingURL=style.css.map */

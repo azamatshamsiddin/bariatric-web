@@ -5,11 +5,14 @@
 	text-transform: uppercase;
 	border-radius: 10rem;
 	text-decoration: none;
-  color: unset;
-  &:hover{
-    color:inherit;
-    text-decoration: none;
-  }
+	color: unset;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
 
 	&--blue {
 		font-family: $font-cormorant;
@@ -25,7 +28,6 @@
 	&--red {
 		font-family: $font-roboto;
 		font-size: 1.8rem;
-		line-height: 2.1rem;
 		background-color: $clr-red;
 		color: $clr-blue;
 		padding: 1.5rem 3rem;
