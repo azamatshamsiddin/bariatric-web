@@ -313,3 +313,20 @@
 		}
 	}
 }
+
+// ============= Section Brands================
+
+.brands {
+	background-color: $clr-red;
+	padding: 6rem;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__img{
+		opacity: 0.35;
+	}
+}

@@ -503,4 +503,17 @@ body {
   color: #fff;
 }
 
+.brands {
+  background-color: #7f2941;
+  padding: 6rem;
+}
+.brands__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brands__img {
+  opacity: 0.35;
+}
+
 /*# sourceMappingURL=style.css.map */
