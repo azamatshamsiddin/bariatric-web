@@ -1,0 +1,12 @@
+@mixin bf-af($color, $l, $r, $b) {
+	@content;
+	content: "";
+	position: absolute;
+	display: inline-block;
+	height: 6px;
+	max-width: 11.6rem;
+	background-color: $color;
+	right: $r;
+	left: $l;
+	bottom: $b;
+}

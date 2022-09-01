@@ -10,7 +10,7 @@ html {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 img {
@@ -28,6 +28,8 @@ a {
   text-decoration: none;
   color: #000;
   display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -53,11 +55,101 @@ body {
   padding: 0 1.5rem;
 }
 
+.btn {
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10rem;
+  text-decoration: none;
+  color: unset;
+}
+.btn:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.btn--blue {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  letter-spacing: -0.01em;
+  color: #7f2941;
+  padding: 2rem 4rem;
+  background-color: #aec5ce;
+}
+.btn--red {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  background-color: #7f2941;
+  color: #aec5ce;
+  padding: 1.5rem 3rem;
+}
+
+.section__top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section__link {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: #004549;
+}
+.section__title {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7f2941;
+  position: relative;
+  padding-bottom: 1.5rem;
+  max-width: 89rem;
+}
+.section__title::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 6px;
+  max-width: 11.6rem;
+  background-color: #7f2941;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+.section__title.border--blue::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 6px;
+  max-width: 11.6rem;
+  background-color: #aec5ce;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+.section__description {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #7f2941;
+  max-width: 63rem;
+  margin-top: 2rem;
+}
+
 .header {
   display: flex;
   align-items: center;
   padding: 0 3rem 0 4rem;
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -74,6 +166,10 @@ body {
   cursor: pointer;
   margin-left: 3rem;
   background-color: transparent;
+}
+.header__btn-burger:hover {
+  background-color: #7f2941;
+  border-radius: 5px;
 }
 
 .nav {
@@ -111,13 +207,216 @@ body {
   gap: 1.5rem;
 }
 
-.main {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets//images/bg-hero.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 96rem;
-  padding: 10rem 0;
+.hero {
+  position: relative;
+}
+.hero__slider-text {
+  max-width: 76.7rem;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 400px;
+}
+.hero__slider-title {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: 9.8rem;
+  line-height: 9.6rem;
+  letter-spacing: -0.02em;
+}
+.hero__slider-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+}
+.hero__slider-btn {
+  margin-top: 2rem;
+}
+.hero__slider-img {
+  filter: brightness(70%);
+}
+.hero__slider-dots {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-bottom: 30px;
+  align-items: center;
+  gap: 2rem;
+}
+.hero__slider-dots > * {
+  padding: 0;
+}
+.hero__slider-dots > * > * {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 7px;
+  height: 7px;
+  border-color: transparent;
+  aspect-ratio: 1;
+}
+.hero__slider-dots > .uk-active > * {
+  background-color: #fff;
+  border-color: transparent;
+  width: 12px;
+  height: 12px;
+}
+
+.surgery {
+  background-color: #aec5ce;
+  padding: 6rem 0;
+}
+.surgery__cards {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.surgery__card {
+  overflow: hidden;
+  max-width: 42rem;
+  min-height: 74rem;
+  border-radius: 3rem;
+  position: relative;
+}
+.surgery__card:hover .surgery__card-img {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+.surgery__card-img {
+  max-width: inherit;
+  min-height: inherit;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: all ease 0.3s;
+}
+.surgery__card-label {
+  background-color: #7f2941;
+  color: #aec5ce;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem 3.15rem;
+  font-family: "Roboto Serif", serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 4.4rem;
+  letter-spacing: -0.01em;
+  position: absolute;
+  bottom: 4rem;
+  left: 2rem;
+  right: 2rem;
+}
+
+.relevant {
+  padding: 8rem 0;
+  background-color: #f4f4f8;
+}
+.relevant__cards {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.relevant__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 42rem;
+  min-height: 44rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
+}
+.relevant__card-top {
+  position: relative;
+}
+.relevant__card-date {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  color: #aec5ce;
+  background-color: #7f2941;
+  padding: 0.7rem 1.3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.relevant__card-date span:nth-child(1) {
+  font-family: "Roboto Serif", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.8rem;
+}
+.relevant__card-date span:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.relevant__card-date span:nth-child(3) {
+  font-family: "Roboto Serif", serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.relevant__card-img {
+  object-fit: cover;
+  max-width: inherit;
+  min-height: 32rem;
+}
+.relevant__card-info {
+  padding: 2rem;
+}
+.relevant__card-title {
+  font-family: "Roboto Serif", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  letter-spacing: -0.01em;
+  color: #7f2941;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+.relevant__card-title::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 6px;
+  max-width: 11.6rem;
+  background-color: #aec5ce;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.relevant__slider-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 6rem;
+}
+.relevant__slider-dot {
+  border: 1px solid #7f2941;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.relevant__slider-dot--active {
+  position: relative;
+}
+.relevant__slider-dot--active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: #7f2941;
 }
 
 /*# sourceMappingURL=style.css.map */
