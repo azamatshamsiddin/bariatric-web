@@ -50,6 +50,9 @@
 		transition: all ease 0.3s;
 		padding: 1rem 2.5rem;
 		border-radius: 10rem;
+		&--secondary {
+			color: $clr-white;
+		}
 
 		&--active {
 			background-color: $clr-blue;
@@ -60,6 +63,8 @@
 			text-decoration: none;
 		}
 	}
+
+
 }
 
 .flag {
@@ -67,5 +72,17 @@
 		display: flex;
 		align-items: center;
 		gap: 1.5rem;
+	}
+}
+
+.header-secondary {
+	display: flex;
+	align-items: center;
+	background-color: $clr-red;
+	padding: 3rem 6rem ;
+
+	&__logo-img{
+		max-width: 34rem;
+		height: auto;
 	}
 }

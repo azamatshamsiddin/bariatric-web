@@ -1,0 +1,369 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
+.hero {
+	position: relative;
+
+
+	&__slider-text {
+		max-width: 76.7rem;
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+		position: absolute;
+		right: 32rem;
+		top: 30rem;
+		color: $clr-white;
+		text-align: right;
+	}
+	&__slider-title {
+		font-family: $font-cormorant;
+		font-weight: 700;
+		font-size: 9.8rem;
+		line-height: 9.6rem;
+		letter-spacing: -0.02em;
+		margin-bottom: 4rem;
+	}
+	&__slider-subtitle {
+		font-family: $font-roboto;
+		font-size: 3.6rem;
+		line-height: 4.4rem;
+	}
+	&__slider-btn {
+		margin-top: 4rem;
+	}
+	&__slider-img {
+		filter: brightness(70%);
+		object-fit: cover;
+		min-height: 99rem;
+		width: 100%;
+	}
+	&__slider-dots {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin-bottom: 30px;
+
+		align-items: center;
+		gap: 2rem;
+		& > * {
+			padding: 0;
+		}
+
+		& > * > * {
+			background-color: rgba(255, 255, 255, 0.6);
+			width: 7px;
+			height: 7px;
+			border-color: transparent;
+			aspect-ratio: 1;
+		}
+	}
+	&__slider-dots > .uk-active > * {
+		background-color: #fff;
+		border-color: transparent;
+		width: 12px;
+		height: 12px;
+	}
+}
+
+.surgery {
+	background-color: $clr-blue;
+	padding: 6rem 0;
+	&__cards {
+		margin-top: 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__card {
+		overflow: hidden;
+		max-width: 42rem;
+		min-height: 74rem;
+		border-radius: 3rem;
+		position: relative;
+		&:hover &-img {
+			filter: grayscale(0);
+			transform: scale(1.05);
+		}
+	}
+	&__card-img {
+		max-width: inherit;
+		min-height: inherit;
+		object-fit: cover;
+		filter: grayscale(1);
+		transition: all ease 0.3s;
+	}
+
+	&__card-label {
+		background-color: $clr-red;
+		color: $clr-blue;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 2rem 3.15rem;
+		font-family: $font-roboto-sans;
+		font-weight: 700;
+		font-size: 3.8rem;
+		line-height: 4.4rem;
+		letter-spacing: -0.01em;
+		position: absolute;
+		bottom: 4rem;
+		left: 2rem;
+		right: 2rem;
+	}
+}
+
+// ==============Section Relevant
+
+.relevant {
+	padding: 8rem 0;
+	background-color: $clr-grey;
+	&__cards {
+		margin-top: 6rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		max-width: 42rem;
+		min-height: 44rem;
+		background-color: $clr-white;
+		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
+	}
+
+	&__card-top {
+		position: relative;
+	}
+	&__card-date {
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		color: $clr-blue;
+		background-color: $clr-red;
+		padding: 0.7rem 1.3rem;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		span {
+			&:nth-child(1) {
+				font-family: $font-roboto-sans;
+				font-weight: 700;
+				font-size: 2rem;
+				line-height: 1.8rem;
+			}
+			&:nth-child(2) {
+				font-family: $font-roboto;
+				font-weight: 500;
+				font-size: 1.4rem;
+				line-height: 1.8rem;
+			}
+			&:nth-child(3) {
+				font-family: $font-roboto-sans;
+				font-weight: 700;
+				font-size: 1rem;
+				line-height: 1.2rem;
+			}
+		}
+	}
+	&__card-img {
+		object-fit: cover;
+		max-width: inherit;
+		min-height: 32rem;
+		width: 100%;
+	}
+
+	&__card-info {
+		padding: 2rem;
+	}
+	&__card-title {
+		font-family: $font-roboto-sans;
+		font-weight: 700;
+		font-size: 2.4rem;
+		line-height: 3rem;
+		letter-spacing: -0.01em;
+		color: $clr-red;
+		position: relative;
+		padding-bottom: 1.5rem;
+
+		&::after {
+			@include bf-af($clr-blue, 0, 0, 0);
+		}
+	}
+
+	&__slider-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 6rem;
+	}
+	&__slider-dot {
+		border: 1px solid $clr-red;
+		width: 1.6rem;
+		height: 1.6rem;
+		background-color: transparent;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&--active {
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				border-radius: 50%;
+				display: inline-block;
+				width: 0.9rem;
+				height: 0.9rem;
+				background-color: $clr-red;
+			}
+		}
+	}
+}
+// ============Section banner ================
+
+.result {
+	padding: 8rem 0;
+
+	&__cards {
+		display: flex;
+		align-items: center;
+	}
+	&__card {
+		max-width: 460px;
+		height: 620px;
+		background-color: $clr-blue;
+		background-repeat: no-repeat;
+		flex: 1;
+
+		&:nth-child(1) {
+			background-image: url(../assets/images/result-img-1.png);
+			background-position: top 16rem right -3rem;
+			background-size: contain;
+		}
+		&:nth-child(2) {
+			background-image: url(../assets/images/result-img-2.png);
+			background-position: top 19rem center;
+			background-size: 39rem;
+			background-color: $clr-dark-blue;
+		}
+		&:nth-child(3) {
+			background-image: url(../assets/images/result-img-3.png);
+			background-position: bottom right;
+			background-size: contain;
+		}
+	}
+	&__card-info {
+		padding-top: 2rem;
+		padding-left: 6rem;
+	}
+	&__card-title {
+		font-family: $font-roboto-sans;
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 2.8rem;
+		letter-spacing: -0.03em;
+		text-transform: uppercase;
+		color: $clr-red;
+		position: relative;
+		padding-bottom: 1.5rem;
+		&::after {
+			@include bf-af($clr-red, 0, 0, 0);
+		}
+		&--white {
+			color: $clr-white;
+			position: relative;
+			&::after {
+				@include bf-af($clr-blue, 0, 0, 0);
+			}
+		}
+	}
+	&__card-num {
+		font-family: $font-roboto-sans;
+		font-weight: 700;
+		font-size: 9.6rem;
+		line-height: 11.2rem;
+		letter-spacing: -0.01em;
+		color: $clr-red;
+		margin-bottom: 1rem;
+		&--white {
+			color: $clr-white;
+		}
+	}
+}
+
+// ============= Section Brands================
+
+.brands {
+	background-color: $clr-red;
+	padding: 6rem;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__img {
+		opacity: 0.35;
+		width: 100%;
+	}
+}
+
+// ============= Section Contact================
+
+.contact {
+	padding: 6rem 0;
+	background-color: $clr-grey;
+	&__content {
+		margin-top: 4rem;
+		display: flex;
+		gap: 4rem;
+	}
+	&__links {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		max-width: 40.8rem;
+		padding: 2rem;
+		background-color: #fefefe;
+		box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.08);
+		border-radius: 3rem;
+	}
+	&__img {
+		padding: 1.6rem;
+		text-align: center;
+		border: 2px dashed $clr-blue;
+		border-radius: 50%;
+	}
+	&__text {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	&__title {
+		font-family: $font-roboto-sans;
+		font-weight: 700;
+		font-size: 2.4rem;
+		line-height: 2.8rem;
+		letter-spacing: -0.01em;
+		text-transform: uppercase;
+		color: $clr-red;
+	}
+	&__link {
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+		color: $clr-red;
+	}
+}

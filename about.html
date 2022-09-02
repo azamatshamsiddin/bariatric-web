@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google-Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Roboto+Serif:opsz,wght@8..144,300;8..144,700&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+
+		<!-- Own styles -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Bariatric | About Us</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="header-secondary">
+			<a class="header-secondary__logo-link" href="#">
+				<img class="header-secondary__logo-img" src="./assets/logo-light.svg" alt="logo-brand" width="458" height="164" />
+			</a>
+			<nav class="nav nav--secondary">
+				<ul class="nav__list nav__list--secondary">
+					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary" href="#">Bariatric surgery</a></li>
+					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary nav__link--active" href="#">About us</a></li>
+					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary" href="#">News</a></li>
+					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary" href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<ul class="flag__list">
+				<li class="flag__item">
+					<a class="flag__link" href="#"><img class="flag__img" width="24" height="24" src="./assets/icons/flag-rus.svg" alt="flag-rus" /></a>
+				</li>
+				<li class="flag__item">
+					<a class="flag__link" href="#"><img class="flag__img" width="24" height="24" src="./assets/icons/flag-eng.svg" alt="flag-eng" /></a>
+				</li>
+				<li class="flag__item">
+					<a class="flag__link" href="#"><img class="flag__img" width="24" height="24" src="./assets/icons/flag-uz.svg" alt="flag-uz" /></a>
+				</li>
+			</ul>
+
+			<button class="header__btn-burger">
+				<img src="./assets/icons/i-burger-menu.svg" width="24" height="24" alt="icon menu" />
+			</button>
+		</header>
+		<!-- end of header -->
+
+
+		<!-- Main -->
+		<main class="main">
+
+			<section class="about">
+				<div class="container">
+					<div class="about__content">
+						<div class="about__top">
+							<ul class="about__top-list">
+								<li class="about__top-item"><a class="about__top-link" href="#">Home</a></li>
+								<li class="about__top-item"><a class="about__top-link" href="#">Page</a></li>
+								<li class="about__top-item"><a class="about__top-link" href="#">Current page</a></li>
+							</ul>
+						</div>
+						<div class="section__top">
+							<h2 class="section__title border--blue">About Bariatric</h2>
+						</div>
+
+						<div class="section__content">
+							<div class="section__content-left">
+								<ul class="section__list">
+									<li class="section__item"><a class="section__content-link" href="#">About us</a></li>
+									<li class="section__item"><a class="section__content-link" href="#">Founders</a></li>
+									<li class="section__item"><a class="section__content-link" href="#">Our hospital</a></li>
+								</ul>
+							</div>
+							<div class="section__content-right">
+								<h3 class="section__content-heading">Amity International School Abu Dhabi is part of the Amity Education Group, a not-for-profit Education Foundation with campuses across the world.</h3>
+								<p class="section__paragraph">
+									Our school was founded in September 2015 as a small primary school providing the National Curriculum of England and Wales for boys and girls. The school’s
+									popularity amongst the Abu Dhabi community has grown rapidly. Six years later, the school has grown by over 600% and now caters for a diverse range of pupils aged
+									3 to 18 with an equally diverse range of interests, backgrounds, and aspirations.
+								</p>
+								<p class="section__paragraph">
+									The school features state-of-the-art, unrivalled facilities that, together with an outstanding team of educators and support staff, help pupils to fulfil their
+									academic aspirations, as well as develop into independent, confident, global citizens and life-long learners.
+								</p>
+								<article class="article">
+									<h4 class="article__title">Our Mission</h4>
+									<p class="article__description section__paragraph">
+										Amity University Dubai will strive to build a conscious community that will positively impact society and humanity. We will continue to educate, while also
+										creating long-term sustainable solutions that promote innovation, exploration, creativity, tolerance, equality, opportunity and a better future for generations
+										to come.
+									</p>
+								</article>
+								<article class="article">
+									<h4 class="article__title">Our Vision</h4>
+									<p class="article__description section__paragraph">
+										Amity University Dubai will strive to build a conscious community that will positively impact society and humanity. We will continue to educate, while also
+										creating long-term sustainable solutions that promote innovation, exploration, creativity, tolerance, equality, opportunity and a better future for generations
+										to come.
+									</p>
+								</article>
+								<article class="article">
+									<h4 class="article__title">Our Values</h4>
+									<ul class="article__list">
+										<li class="article__item">We aim to provide educational opportunities for all</li>
+										<li class="article__item">We believe in the advancement and protection of knowledge</li>
+										<li class="article__item">The protection of rights and the freedom of individuals and respect for diversity</li>
+										<li class="article__item">Excellence in the individual achievements of staff and students, supported by the university in reaching their personal goals</li>
+										<li class="article__item">We’re committed to health, well-being, sustainability and the sustainable development of the community</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
