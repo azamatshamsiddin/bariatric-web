@@ -190,6 +190,7 @@
 		object-fit: cover;
 		max-width: inherit;
 		min-height: 32rem;
+		width: 100%;
 	}
 
 	&__card-info {
@@ -328,6 +329,7 @@
 
 	&__img {
 		opacity: 0.35;
+		width: 100%;
 	}
 }
 

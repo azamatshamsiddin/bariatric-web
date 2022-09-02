@@ -91,6 +91,37 @@ body {
   padding: 1.5rem 3rem;
 }
 
+.scroll__top-btn {
+  position: fixed;
+  z-index: 100;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #aec5ce;
+  transition: all ease-in 0.3s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.scroll__top-btn:hover {
+  background-color: #f4f4f8;
+}
+.scroll__top-btn:hover img {
+  animation: scrollToTop 1s linear infinite alternate;
+}
+
+@keyframes scrollToTop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .section__top {
   display: flex;
   align-items: center;
@@ -298,6 +329,18 @@ body {
   text-transform: uppercase;
   color: #aec5ce;
 }
+
+.copy {
+  margin-top: 4rem;
+}
+.copy__text {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #fff;
+  opacity: 0.5;
+}
+
 .form {
   width: 100%;
   background-color: #fefefe;
@@ -525,6 +568,7 @@ body {
   object-fit: cover;
   max-width: inherit;
   min-height: 32rem;
+  width: 100%;
 }
 .relevant__card-info {
   padding: 2rem;
@@ -676,6 +720,7 @@ body {
 }
 .brands__img {
   opacity: 0.35;
+  width: 100%;
 }
 
 .contact {
