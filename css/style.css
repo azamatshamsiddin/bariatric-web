@@ -941,4 +941,20 @@ body {
   padding-left: 1.8rem;
 }
 
+.certificate {
+  background-color: #aec5ce;
+  padding: 6rem 5.5rem 2.5rem;
+}
+.certificate__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+.certificate__item {
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */

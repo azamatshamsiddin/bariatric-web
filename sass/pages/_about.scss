@@ -19,14 +19,14 @@
 	background-color: $clr-grey;
 	background-image: url("../../assets/images/bg-hero.jpg");
 	background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top -110px center;
-  padding-top: 25rem;
+	background-size: contain;
+	background-position: top -110px center;
+	padding-top: 25rem;
 
 	&__content {
 		background-color: $clr-white;
 		padding: 3rem 6rem;
-    min-height: 163.7rem;
+		min-height: 163.7rem;
 		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
 
 		p {
@@ -173,5 +173,25 @@
 		color: $clr-red;
 		border-left: 7px solid $clr-blue;
 		padding-left: 1.8rem;
+	}
+}
+
+// Certificates
+
+.certificate {
+	background-color: $clr-blue;
+	padding: 6rem 5.5rem 2.5rem;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+    margin-top: 3rem;
+    gap: 3rem;
+	}
+
+	&__item {
+		border-radius: 3rem;
+    overflow: hidden;
 	}
 }
