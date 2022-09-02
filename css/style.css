@@ -421,8 +421,10 @@ body {
   align-items: flex-end;
   flex-direction: column;
   position: absolute;
-  right: 0;
-  top: 400px;
+  right: 32rem;
+  top: 30rem;
+  color: #fff;
+  text-align: right;
 }
 .hero__slider-title {
   font-family: "Cormorant", serif;
@@ -430,18 +432,21 @@ body {
   font-size: 9.8rem;
   line-height: 9.6rem;
   letter-spacing: -0.02em;
+  margin-bottom: 4rem;
 }
 .hero__slider-subtitle {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 3.6rem;
   line-height: 4.4rem;
 }
 .hero__slider-btn {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 .hero__slider-img {
   filter: brightness(70%);
+  object-fit: cover;
+  min-height: 99rem;
+  width: 100%;
 }
 .hero__slider-dots {
   position: absolute;
@@ -771,6 +776,11 @@ body {
   font-size: 1.8rem;
   line-height: 2.2rem;
   color: #7f2941;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
