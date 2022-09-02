@@ -1,7 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../base/typography" as *;
-
-.founders {
+.doctors {
 	background-color: $clr-grey;
 	background-image: url("../../assets/images/image.jpg");
 	background-repeat: no-repeat;
@@ -13,7 +12,7 @@
 	&__content {
 		background-color: $clr-white;
 		padding: 3rem 6rem 6rem;
-		min-height: 163.7rem;
+		min-height: 230rem;
 		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
 
 		p {
@@ -62,38 +61,19 @@
 		}
 	}
 
-	&__nav-list {
+	&__articles {
 		display: flex;
-		align-items: center;
-		border-bottom: 1px solid $clr-blue;
-		margin-bottom: 3rem;
+		flex-direction: column;
+		gap: 2rem;
 	}
-	&__nav-btn {
-		padding: 1rem 2rem;
-		text-align: center;
+
+	&__article-title {
 		font-family: $font-roboto-sans;
-		font-weight: 700;
-		font-size: 1.6rem;
-		line-height: 2.4rem;
-		letter-spacing: -0.01em;
-
-		&--blue {
-			background-color: $clr-blue;
-			color: $clr-white;
-		}
-		&--red {
-			background-color: $clr-red;
-			color: $clr-blue;
-		}
-	}
-}
-
-.human {
-	&__name {
-		font-weight: 700;
-		font-size: 4.1rem;
-		line-height: 2.8rem;
-		color: $clr-grey-90;
-		margin-top: 3rem;
+		font-weight: 300;
+		font-size: 3.6rem;
+		line-height: 5rem;
+		text-align: center;
+		color: $clr-red;
+    margin-bottom: 3rem;
 	}
 }
