@@ -71,3 +71,29 @@
 		color: $clr-white;
 	}
 }
+
+.social {
+	margin-top: 4rem;
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2.1rem 0;
+		border-bottom: 1px solid $clr-blue-30;
+		border-top: 1px solid $clr-blue-30;
+	}
+	&__item {
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-weight: 500;
+		font-size: 1.6rem;
+		line-height: 1.9rem;
+		text-transform: uppercase;
+		color: $clr-blue;
+	}
+	&__img {
+	}
+}
