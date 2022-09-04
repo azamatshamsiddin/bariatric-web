@@ -261,6 +261,11 @@ body {
   color: #59595c;
   margin-top: 3rem;
 }
+.section__paragraph span {
+  display: block;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}
 .section__nav-list {
   display: flex;
   align-items: center;
@@ -275,8 +280,7 @@ body {
   color: #7f2941;
 }
 .section__nav-link {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
   text-align: center;
   text-transform: uppercase;
   color: #7f2941;
@@ -285,7 +289,7 @@ body {
   text-decoration: underline;
 }
 .section__nav-link--disabled {
-  color: grey;
+  color: #bbbcbb;
 }
 .section__sidebar {
   width: 100%;
@@ -326,12 +330,12 @@ body {
 
 .main-bg {
   background-color: #f4f4f8;
-  background-image: url("../../assets/images/about-bg.jpg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: contain;
   width: 100%;
   padding-top: 12%;
+  padding-bottom: 6rem;
 }
 .main__content {
   margin-top: 5rem;
@@ -904,57 +908,12 @@ body {
   border-radius: 3rem;
   overflow: hidden;
 }
+
 .founders {
-  background-color: #f4f4f8;
-  background-image: url("../../assets/images/image.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top 0 center;
-  padding-top: 18rem;
-  padding-bottom: 8.5rem;
-}
-.founders__content {
   background-color: #fff;
   padding: 3rem 6rem 6rem;
   min-height: 163.7rem;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
-}
-.founders__content p {
-  font-size: 2rem;
-}
-.founders__top {
-  margin-bottom: 2rem;
-}
-.founders__top-list {
-  padding: 1rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.founders__top-link {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  text-align: center;
-  text-transform: uppercase;
-  color: #7f2941;
-}
-.founders__top-item:nth-child(2)::after, .founders__top-item:nth-child(2)::before {
-  content: "::";
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-}
-.founders__top-item:nth-child(2)::after {
-  margin-left: 1rem;
-}
-.founders__top-item:nth-child(2)::before {
-  margin-right: 1rem;
-}
-.founders__top-item:nth-child(2) a {
-  text-decoration: underline;
-}
-.founders__top-item:nth-child(3) a {
-  color: #a7a8a9;
 }
 .founders__nav-list {
   display: flex;
@@ -970,14 +929,25 @@ body {
   font-size: 1.6rem;
   line-height: 2.4rem;
   letter-spacing: -0.01em;
+  border: 1px solid transparent;
 }
 .founders__nav-btn--blue {
   background-color: #aec5ce;
   color: #fff;
 }
+.founders__nav-btn--blue:hover {
+  background-color: #7f2941;
+  color: #aec5ce;
+  border: 1px solid #aec5ce;
+}
 .founders__nav-btn--red {
   background-color: #7f2941;
   color: #aec5ce;
+}
+.founders__nav-btn--red:hover {
+  background-color: #aec5ce;
+  color: #7f2941;
+  border: 1px solid #7f2941;
 }
 
 .human__name {

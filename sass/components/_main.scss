@@ -3,12 +3,12 @@
 .main {
 	&-bg {
 		background-color: $clr-grey-30;
-		background-image: url("../../assets/images/about-bg.jpg");
 		background-repeat: no-repeat;
 		background-position: top left;
 		background-size: contain;
 		width: 100%;
 		padding-top: 12%;
+		padding-bottom: 6rem;
 	}
 
 	&__content {

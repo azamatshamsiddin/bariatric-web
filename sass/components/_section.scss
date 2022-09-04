@@ -31,7 +31,13 @@
 		font-size: 1.8rem;
 		line-height: 2.8rem;
 		color: $clr-grey-90;
-margin-top: 3rem;
+		margin-top: 3rem;
+
+    span{
+      display: block;
+      margin-top: 8rem;
+      margin-bottom: 2rem;
+    }
 	}
 
 	&__nav-list {
@@ -46,21 +52,20 @@ margin-top: 3rem;
 			content: "::";
 			margin-left: 1rem;
 			font-size: 1.6rem;
-			color: #7f2941;
+			color: $clr-red;
 		}
 	}
 	&__nav-link {
-		font-size: 14px;
-		line-height: 16px;
+		font-size: 16px;
 		text-align: center;
 		text-transform: uppercase;
-		color: #7f2941;
+		color: $clr-red;
 
 		&--active {
 			text-decoration: underline;
 		}
 		&--disabled {
-			color: grey;
+			color: $clr-grey-80;
 		}
 	}
 	&__sidebar {

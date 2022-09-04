@@ -1,8 +1,5 @@
 @use "../abstracts/variables" as *;
 @use "../base/typography" as *;
-// .main {
-// 	position: relative;
-// }
 
 .about {
 	background-color: $clr-white;
@@ -46,9 +43,5 @@
 	&__item {
 		border-radius: 3rem;
 		overflow: hidden;
-	}
-
-	&__img{
-
 	}
 }

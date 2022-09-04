@@ -2,65 +2,10 @@
 @use "../base/typography" as *;
 
 .founders {
-	background-color: $clr-grey-30;
-	background-image: url("../../assets/images/image.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: top 0 center;
-	padding-top: 18rem;
-	padding-bottom: 8.5rem;
-
-	&__content {
-		background-color: $clr-white;
-		padding: 3rem 6rem 6rem;
-		min-height: 163.7rem;
-		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
-
-		p {
-			font-size: 2rem;
-		}
-	}
-	&__top {
-		margin-bottom: 2rem;
-	}
-
-	&__top-list {
-		padding: 1rem 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 1rem;
-	}
-	&__top-link {
-		font-size: 1.4rem;
-		line-height: 1.6rem;
-		text-align: center;
-		text-transform: uppercase;
-		color: $clr-red;
-	}
-	&__top-item {
-		&:nth-child(2) {
-			&::after,
-			&::before {
-				content: "::";
-				font-size: 1.4rem;
-				line-height: 1.6rem;
-			}
-
-			&::after {
-				margin-left: 1rem;
-			}
-			&::before {
-				margin-right: 1rem;
-			}
-		}
-		&:nth-child(2) a {
-			text-decoration: underline;
-		}
-		&:nth-child(3) a {
-			color: #a7a8a9;
-		}
-	}
+	background-color: $clr-white;
+	padding: 3rem 6rem 6rem;
+	min-height: 163.7rem;
+	box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
 
 	&__nav-list {
 		display: flex;
@@ -76,14 +21,25 @@
 		font-size: 1.6rem;
 		line-height: 2.4rem;
 		letter-spacing: -0.01em;
+		border: 1px solid transparent;
 
 		&--blue {
 			background-color: $clr-blue-80;
 			color: $clr-white;
+			&:hover {
+				background-color: $clr-red;
+				color: $clr-blue-80;
+				border: 1px solid $clr-blue-80;
+			}
 		}
 		&--red {
 			background-color: $clr-red;
 			color: $clr-blue-80;
+			&:hover {
+				background-color: $clr-blue-80;
+				color: $clr-red;
+				border: 1px solid $clr-red;
+			}
 		}
 	}
 }
