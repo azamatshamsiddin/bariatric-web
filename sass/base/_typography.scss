@@ -1,3 +1,65 @@
+@use "../abstracts/variables" as *;
+
 $font-roboto: "Roboto", sans-serif;
 $font-roboto-sans: "Roboto Serif", serif;
 $font-cormorant: "Cormorant", serif;
+
+// .section {
+// 	&__nav-list {
+// 		display: flex;
+// 		align-items: center;
+// 		gap: 1rem;
+// 		justify-content: center;
+// 		margin-bottom: 2rem;
+// 	}
+// 	&__nav-item {
+// 		&:not(:last-child)::after {
+// 			content: "::";
+// 			margin-left: 1rem;
+// 			font-size: 1.6rem;
+// 			color: #7f2941;
+// 		}
+// 	}
+// 	&__nav-link {
+// 		font-size: 14px;
+// 		line-height: 16rem;
+// 		text-align: center;
+// 		text-transform: uppercase;
+// 		color: #7f2941;
+
+// 		&--active {
+// 			text-decoration: underline;
+// 		}
+// 		&--disabled {
+// 			color: grey;
+// 		}
+// 	}
+// 	&__sidebar {
+// 		width: 100%;
+// 		max-width: 356rem;
+// 	}
+// 	&__sidebar-list {
+// 		display: flex;
+// 		flex-direction: column;
+// 	}
+// 	&__sidebar-item {
+// 		padding: 1rem 0;
+// 		border-bottom: 1px solid grey;
+// 		&:hover {
+// 			background-color: lightblue;
+// 		}
+// 	}
+// 	&__sidebar-link {
+// 		border-left: 6rem solid lightblue;
+// 		font-size: 24rem;
+// 		line-height: 28rem;
+// 		color: #7f2941;
+// 		padding-left: 2rem;
+// 		width: 100%;
+// 	}
+
+// 	&__content {
+// 		max-width: 85rem;
+// 		width: 100%;
+// 	}
+// }

@@ -2,7 +2,7 @@
 @use "../base/typography" as *;
 
 .founders {
-	background-color: $clr-grey;
+	background-color: $clr-grey-30;
 	background-image: url("../../assets/images/image.jpg");
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -65,7 +65,7 @@
 	&__nav-list {
 		display: flex;
 		align-items: center;
-		border-bottom: 1px solid $clr-blue;
+		border-bottom: 1px solid $clr-blue-80;
 		margin-bottom: 3rem;
 	}
 	&__nav-btn {
@@ -78,12 +78,12 @@
 		letter-spacing: -0.01em;
 
 		&--blue {
-			background-color: $clr-blue;
+			background-color: $clr-blue-80;
 			color: $clr-white;
 		}
 		&--red {
 			background-color: $clr-red;
-			color: $clr-blue;
+			color: $clr-blue-80;
 		}
 	}
 }

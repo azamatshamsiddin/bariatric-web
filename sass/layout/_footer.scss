@@ -41,6 +41,9 @@
 		line-height: 1.8rem;
 		color: $clr-white;
 	}
+	&__contact-link:hover{
+		opacity: 0.6;
+	}
 
 	&__list-wrapper {
 		display: flex;
@@ -54,7 +57,7 @@
 		gap: 1.5rem;
 		padding-top: 2rem;
 		max-width: 18.2rem;
-		border-top: 1px solid $clr-blue;
+		border-top: 1px solid $clr-blue-80;
 	}
 	&__list-title {
 		font-family: $font-cormorant;
@@ -62,13 +65,18 @@
 		font-size: 2.4rem;
 		line-height: 2.9rem;
 		text-transform: uppercase;
-		color: $clr-blue;
+		color: $clr-blue-80;
 		margin-bottom: 2rem;
 	}
 	&__link {
 		font-size: 1.4rem;
 		line-height: 1.6rem;
 		color: $clr-white;
+		transition: all ease .3s;
+		&:hover{
+			transform: translateX(5px);
+			opacity: .6;
+		}
 	}
 }
 
@@ -90,7 +98,10 @@
 		font-size: 1.6rem;
 		line-height: 1.9rem;
 		text-transform: uppercase;
-		color: $clr-blue;
+		color: $clr-blue-80;
+		&:hover{
+			opacity: 0.6;
+		}
 	}
 }
 

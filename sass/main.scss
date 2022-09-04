@@ -10,7 +10,9 @@
 @use "./components/btn" as *;
 @use "./components/card" as *;
 @use "./components/dropdown" as *;
-@use "./components/sc-title" as *;
+@use "./components/heading" as *;
+@use "./components/section" as *;
+@use "./components/main" as *;
 
 // LAYOUT
 @use "./layout/header" as *;

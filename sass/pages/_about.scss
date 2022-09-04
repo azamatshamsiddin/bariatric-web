@@ -1,98 +1,18 @@
 @use "../abstracts/variables" as *;
 @use "../base/typography" as *;
-.main {
-	position: relative;
-}
+// .main {
+// 	position: relative;
+// }
 
 .about {
-	background-color: $clr-grey;
-	background-image: url("../../assets/images/bg-hero.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: top -110px center;
-	padding-top: 25rem;
-
-	&__content {
-		background-color: $clr-white;
-		padding: 3rem 6rem;
-		min-height: 163.7rem;
-		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
-
-		p {
-			font-size: 2rem;
-		}
-	}
-	&__top {
-		margin-bottom: 2rem;
-	}
-
-	&__top-list {
-		padding: 1rem 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 1rem;
-	}
-	&__top-link {
-		font-size: 1.4rem;
-		line-height: 1.6rem;
-		text-align: center;
-		text-transform: uppercase;
-		color: $clr-red;
-	}
-	&__top-item {
-		&:nth-child(2) {
-			&::after,
-			&::before {
-				content: "::";
-				font-size: 1.4rem;
-				line-height: 1.6rem;
-			}
-
-			&::after {
-				margin-left: 1rem;
-			}
-			&::before {
-				margin-right: 1rem;
-			}
-		}
-		&:nth-child(2) a {
-			text-decoration: underline;
-		}
-		&:nth-child(3) a {
-			color: #a7a8a9;
-		}
-	}
+	background-color: $clr-white;
+	padding: 3rem 6rem;
+	min-height: 163.7rem;
+	box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
 }
 
 .article {
-	&__content {
-		display: flex;
-		align-items: flex-start;
-		gap: 6rem;
-	}
-
-	&__title {
-		font-family: $font-cormorant;
-		font-weight: 700;
-		font-size: 3.8rem;
-		line-height: 6.4rem;
-		color: $clr-red;
-		position: relative;
-		padding-bottom: 5px;
-		margin-top: 3rem;
-
-		&::after {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			height: 6px;
-			width: 11.6rem;
-			background-color: $clr-blue;
-		}
-	}
-
+	margin-top: 3rem;
 	&__list {
 		display: flex;
 		margin-top: 3rem;
@@ -108,73 +28,10 @@
 	}
 }
 
-.section {
-	&__paragraph {
-		font-size: 18px;
-		line-height: 28px;
-		color: $clr-grey-90;
-		margin-top: 3rem;
-
-    span{
-      display: block;
-      margin-bottom: 4rem;
-      margin-top: 10rem;
-    }
-	}
-	&__content {
-		margin-top: 5rem;
-		display: flex;
-		align-items: flex-start;
-		gap: 6rem;
-	}
-
-	&__content-heading {
-		font-family: $font-roboto-sans;
-		font-weight: 300;
-		font-size: 36px;
-		line-height: 50px;
-		color: $clr-red;
-	}
-
-	&__content-left, &__content-right {
-		width: 100%;
-	}
-
-	&__list {
-		max-width: 35.5rem;
-		display: flex;
-		align-items: flex-start;
-		flex-direction: column;
-	}
-
-	&__item {
-		border-bottom: 1px solid $clr-grey-80;
-		width: 100%;
-		padding: 1rem 0;
-		transition: all ease 0.3s;
-		&:hover {
-			background-color: $clr-blue;
-			a {
-				color: $clr-white;
-			}
-		}
-	}
-
-	&__content-link {
-		transition: all ease 0.3s;
-		width: 100%;
-		font-size: 2.4rem;
-		line-height: 2.8rem;
-		color: $clr-red;
-		border-left: 7px solid $clr-blue;
-		padding-left: 1.8rem;
-	}
-}
-
 // Certificates
 
 .certificate {
-	background-color: $clr-blue;
+	background-color: $clr-blue-80;
 	padding: 6rem 5.5rem 2.5rem;
 
 	&__list {
@@ -183,10 +40,15 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-top: 3rem;
+		gap: 3rem;
 	}
 
 	&__item {
 		border-radius: 3rem;
 		overflow: hidden;
+	}
+
+	&__img{
+
 	}
 }

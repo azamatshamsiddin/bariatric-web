@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+@use "../base/typography" as *;
+.main {
+	&-bg {
+		background-color: $clr-grey-30;
+		background-image: url("../../assets/images/about-bg.jpg");
+		background-repeat: no-repeat;
+		background-position: top left;
+		background-size: contain;
+		width: 100%;
+		padding-top: 12%;
+	}
+
+	&__content {
+		margin-top: 5rem;
+		display: flex;
+		gap: 6rem;
+	}
+}

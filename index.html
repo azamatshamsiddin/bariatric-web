@@ -22,16 +22,17 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header class="header">
-			<a class="header__logo-link" href="#">
-				<img class="header__logo-img" src="./assets/logo-dark.svg" alt="logo-brand" width="458" height="164" />
+		<header class="header header-primary">
+			<a class="header__logo-link" href="index.html">
+				<img class="header-primary__logo-img header__logo-img" src="./assets/logo-dark.svg" alt="logo-brand" width="460" height="164" />
 			</a>
+			<!-- Header-nav -->
 			<nav class="nav">
 				<ul class="nav__list">
-					<li class="nav__item"><a class="nav__link nav__link--active" href="#">Bariatric surgery</a></li>
-					<li class="nav__item"><a class="nav__link" href="#">About us</a></li>
-					<li class="nav__item"><a class="nav__link" href="#">News</a></li>
-					<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+					<li class="nav__item"><a class="nav__link nav__link--active nav__link--primary" href="index.html">Bariatric surgery</a></li>
+					<li class="nav__item"><a class="nav__link nav__link--primary" href="about.html">About us</a></li>
+					<li class="nav__item"><a class="nav__link nav__link--primary" href="news.html">News</a></li>
+					<li class="nav__item"><a class="nav__link nav__link--primary" href="#">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -47,10 +48,11 @@
 				</li>
 			</ul>
 
-			<button class="header__btn-burger">
+			<button class="header__btn-burger header__btn-burger--primary">
 				<img src="./assets/icons/i-burger-menu.svg" width="24" height="24" alt="icon menu" />
 			</button>
 		</header>
+		<!-- ======MAIN======= -->
 		<main class="main">
 			<!-- Section Hero -->
 			<section class="hero">
@@ -70,8 +72,6 @@
 							</li>
 						</ul>
 					</div>
-
-					<ul class="hero__slider-dots uk-slideshow-nav uk-dotnav uk-flex-center"></ul>
 				</div>
 			</section>
 
@@ -80,8 +80,9 @@
 				<h2 class="visually-hidden">Bariatric Surgery Section</h2>
 
 				<div class="container">
-					<div class="section__top">
-						<h2 class="section__title">Bariatric surgery</h2>
+					<div class="heading__wrapper">
+						<h2 class="heading">Bariatric surgery</h2>
+						<div class="heading-border m-auto heading-border--red"></div>
 					</div>
 					<div class="surgery__cards">
 						<div class="surgery__card">
@@ -103,58 +104,66 @@
 			<!-- Section Relevant News -->
 			<section class="relevant">
 				<div class="container">
-					<div class="section__top">
-						<a class="section__link" href="#">Relevant News</a>
-						<h2 class="section__title border--blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-						<p class="section__description">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro, aliquid reprehenderit iusto inventore sint beatae ipsum impedit in sit illum distinctio sequi
-							quisquam et hic tempore
-						</p>
+					<p class="section__title">Relevant news</p>
+					<div class="heading__wrapper relevant__heading-wrapper">
+						<h2 class="heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+						<div class="heading-border m-auto"></div>
 					</div>
 
-					<ul class="relevant__cards">
-						<li class="relevant__card">
-							<div class="relevant__card-top">
-								<div class="relevant__card-date">
-									<span>24</span>
-									<span>FE</span>
-									<span>2022</span>
-								</div>
-								<img class="relevant__card-img" src="./assets/images/relevant-img-1.jpg" width="420" alt="card image" />
-							</div>
-							<div class="relevant__card-info">
-								<h3 class="relevant__card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-							</div>
-						</li>
+					<p class="section__description">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro, aliquid reprehenderit iusto inventore sint beatae ipsum impedit in sit illum distinctio sequi
+						quisquam et hic tempore
+					</p>
 
-						<li class="relevant__card">
-							<div class="relevant__card-top">
-								<div class="relevant__card-date">
-									<span>24</span>
-									<span>FE</span>
-									<span>2022</span>
+					<!-- Relevant Card -->
+					<div class="card">
+						<ul class="relevant__cards card__list">
+							<li class="relevant__card card__item">
+								<div class="relevant__card-top card__top">
+									<div class="relevant__card-date card__date">
+										<span>24</span>
+										<span>FE</span>
+										<span>2022</span>
+									</div>
+									<img class="relevant__card-img card__img" src="./assets/images/relevant-img-1.jpg" width="420" alt="card image" />
 								</div>
-								<img class="relevant__card-img" src="./assets/images/relevant-img-2.jpg" width="420" alt="card image" />
-							</div>
-							<div class="relevant__card-info">
-								<h3 class="relevant__card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-							</div>
-						</li>
+								<div class="relevant__card-info card__info">
+									<h3 class="relevant__card-title card__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+									<div class="heading-border card__heading-border"></div>
+								</div>
+							</li>
 
-						<li class="relevant__card">
-							<div class="relevant__card-top">
-								<div class="relevant__card-date">
-									<span>24</span>
-									<span>FE</span>
-									<span>2022</span>
+							<li class="relevant__card card__item">
+								<div class="relevant__card-top card__top">
+									<div class="relevant__card-date card__date">
+										<span>24</span>
+										<span>FE</span>
+										<span>2022</span>
+									</div>
+									<img class="relevant__card-img card__img" src="./assets/images/relevant-img-2.jpg" width="420" alt="card image" />
 								</div>
-								<img class="relevant__card-img" src="./assets/images/relevant-img-3.jpg" width="420" alt="card image" />
-							</div>
-							<div class="relevant__card-info">
-								<h3 class="relevant__card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-							</div>
-						</li>
-					</ul>
+								<div class="relevant__card-info card__info">
+									<h3 class="relevant__card-title card__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+									<div class="heading-border card__heading-border"></div>
+								</div>
+							</li>
+
+							<li class="relevant__card card__item">
+								<div class="relevant__card-top card__top">
+									<div class="relevant__card-date card__date">
+										<span>24</span>
+										<span>FE</span>
+										<span>2022</span>
+									</div>
+									<img class="relevant__card-img card__img" src="./assets/images/relevant-img-3.jpg" width="420" alt="card image" />
+								</div>
+								<div class="relevant__card-info card__info">
+									<h3 class="relevant__card-title card__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+									<div class="heading-border card__heading-border"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
 
 					<ul class="relevant__slider-dots">
 						<li class="relevant__slider-dot"></li>
@@ -165,7 +174,7 @@
 				</div>
 			</section>
 
-			<!-- Section Result -->
+			<!-- Section Results -->
 
 			<section class="result">
 				<div class="container">
@@ -174,18 +183,21 @@
 							<div class="result__card-info">
 								<p class="result__card-num">83%</p>
 								<p class="result__card-title">Of lost thier weight</p>
+								<div class="heading-border heading-border--red m-auto"></div>
 							</div>
 						</div>
 						<div class="result__card">
 							<div class="result__card-info">
 								<p class="result__card-num result__card-num--white">30 days</p>
 								<p class="result__card-title result__card-title--white">The fastest result</p>
+								<div class="heading-border"></div>
 							</div>
 						</div>
 						<div class="result__card">
 							<div class="result__card-info">
 								<p class="result__card-num">#1</p>
 								<p class="result__card-title">Research university</p>
+								<div class="heading-border heading-border--red"></div>
 							</div>
 						</div>
 					</div>
@@ -206,15 +218,16 @@
 			<!-- Section Contact -->
 			<section class="contact">
 				<div class="container">
-					<div class="section__top">
-						<a class="section__link" href="#">Contact Us</a>
-						<h2 class="section__title border--blue">Get In Touch</h2>
-						<p class="section__description">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro, aliquid reprehenderit iusto inventore sint beatae ipsum impedit in sit illum distinctio sequi
-							quisquam et hic tempore
-						</p>
+					<p class="section__title">Contact us</p>
+					<div class="heading__wrapper relevant__heading-wrapper">
+						<h2 class="heading">Get In Touch</h2>
+						<div class="heading-border m-auto"></div>
 					</div>
-
+					<p class="section__description">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro, aliquid reprehenderit iusto inventore sint beatae ipsum impedit in sit illum distinctio sequi
+						quisquam et hic tempore
+					</p>
+					<!-- Contact Links -->
 					<div class="contact__content">
 						<div class="contact__links">
 							<div class="contact__wrapper">
@@ -244,7 +257,7 @@
 								</div>
 							</div>
 						</div>
-
+						<!--  Form  -->
 						<form class="form">
 							<div class="form__inputs">
 								<input class="form__input" type="text" placeholder="Your name" />
@@ -283,7 +296,7 @@
 			<div class="container">
 				<div class="footer__wrapper">
 					<div class="footer__info">
-						<a class="footer__img-link" href="#">
+						<a class="footer__img-link" href="index.html">
 							<img class="footer__logo" src="./assets/logo-light.svg" alt="logo" />
 						</a>
 						<div class="footer__contact-wrapper">
@@ -404,11 +417,9 @@
 			</div>
 		</footer>
 		<!--end of copyright section-->
-
 		<button id="scrollToTopBtn" class="scroll__top-btn">
 			<img src="./assets/icons/i-arrow.svg" width="30" height="30" alt="arrow icon" />
 		</button>
 		<script src="./scripts/script.js"></script>
-
 	</body>
 </html>

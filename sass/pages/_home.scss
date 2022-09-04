@@ -1,10 +1,10 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 @use "../base/typography" as *;
+
+// =============HERO===========
 .hero {
 	position: relative;
-
-
 	&__slider-text {
 		max-width: 76.7rem;
 		display: flex;
@@ -38,43 +38,19 @@
 		min-height: 99rem;
 		width: 100%;
 	}
-	&__slider-dots {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		margin-bottom: 30px;
-
-		align-items: center;
-		gap: 2rem;
-		& > * {
-			padding: 0;
-		}
-
-		& > * > * {
-			background-color: rgba(255, 255, 255, 0.6);
-			width: 7px;
-			height: 7px;
-			border-color: transparent;
-			aspect-ratio: 1;
-		}
-	}
-	&__slider-dots > .uk-active > * {
-		background-color: #fff;
-		border-color: transparent;
-		width: 12px;
-		height: 12px;
-	}
 }
 
+
+// ========= Surgery ===========
 .surgery {
-	background-color: $clr-blue;
+	background-color: $clr-blue-80;
 	padding: 6rem 0;
 	&__cards {
 		margin-top: 3rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: 6rem;
 	}
 	&__card {
 		overflow: hidden;
@@ -97,7 +73,7 @@
 
 	&__card-label {
 		background-color: $clr-red;
-		color: $clr-blue;
+		color: $clr-blue-80;
 		text-align: center;
 		text-transform: uppercase;
 		padding: 2rem 3.15rem;
@@ -114,84 +90,15 @@
 }
 
 // ==============Section Relevant
-
 .relevant {
 	padding: 8rem 0;
-	background-color: $clr-grey;
+	background-color: $clr-grey-30;
+
+	&__heading-wrapper{
+		max-width: 89rem;
+	}
 	&__cards {
 		margin-top: 6rem;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	&__card {
-		display: flex;
-		flex-direction: column;
-		max-width: 42rem;
-		min-height: 44rem;
-		background-color: $clr-white;
-		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
-	}
-
-	&__card-top {
-		position: relative;
-	}
-	&__card-date {
-		position: absolute;
-		text-align: center;
-		text-transform: uppercase;
-		color: $clr-blue;
-		background-color: $clr-red;
-		padding: 0.7rem 1.3rem;
-
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-
-		span {
-			&:nth-child(1) {
-				font-family: $font-roboto-sans;
-				font-weight: 700;
-				font-size: 2rem;
-				line-height: 1.8rem;
-			}
-			&:nth-child(2) {
-				font-family: $font-roboto;
-				font-weight: 500;
-				font-size: 1.4rem;
-				line-height: 1.8rem;
-			}
-			&:nth-child(3) {
-				font-family: $font-roboto-sans;
-				font-weight: 700;
-				font-size: 1rem;
-				line-height: 1.2rem;
-			}
-		}
-	}
-	&__card-img {
-		object-fit: cover;
-		max-width: inherit;
-		min-height: 32rem;
-		width: 100%;
-	}
-
-	&__card-info {
-		padding: 2rem;
-	}
-	&__card-title {
-		font-family: $font-roboto-sans;
-		font-weight: 700;
-		font-size: 2.4rem;
-		line-height: 3rem;
-		letter-spacing: -0.01em;
-		color: $clr-red;
-		position: relative;
-		padding-bottom: 1.5rem;
-
-		&::after {
-			@include bf-af($clr-blue, 0, 0, 0);
-		}
 	}
 
 	&__slider-dots {
@@ -226,19 +133,18 @@
 		}
 	}
 }
-// ============Section banner ================
 
+// ============Section Results ================
 .result {
 	padding: 8rem 0;
 
 	&__cards {
 		display: flex;
-		align-items: center;
 	}
 	&__card {
-		max-width: 460px;
-		height: 620px;
-		background-color: $clr-blue;
+		max-width: 46rem;
+		min-height: 62rem;
+		background-color: $clr-blue-80;
 		background-repeat: no-repeat;
 		flex: 1;
 
@@ -251,7 +157,7 @@
 			background-image: url(../assets/images/result-img-2.png);
 			background-position: top 19rem center;
 			background-size: 39rem;
-			background-color: $clr-dark-blue;
+			background-color: $clr-blue-90;
 		}
 		&:nth-child(3) {
 			background-image: url(../assets/images/result-img-3.png);
@@ -262,6 +168,10 @@
 	&__card-info {
 		padding-top: 2rem;
 		padding-left: 6rem;
+		.heading-border{
+			margin: 0;
+			margin-right: auto;
+		}
 	}
 	&__card-title {
 		font-family: $font-roboto-sans;
@@ -271,17 +181,10 @@
 		letter-spacing: -0.03em;
 		text-transform: uppercase;
 		color: $clr-red;
-		position: relative;
-		padding-bottom: 1.5rem;
-		&::after {
-			@include bf-af($clr-red, 0, 0, 0);
-		}
+		margin-bottom: 1.5rem;
 		&--white {
 			color: $clr-white;
-			position: relative;
-			&::after {
-				@include bf-af($clr-blue, 0, 0, 0);
-			}
+
 		}
 	}
 	&__card-num {
@@ -320,7 +223,7 @@
 
 .contact {
 	padding: 6rem 0;
-	background-color: $clr-grey;
+	background-color: $clr-grey-30;
 	&__content {
 		margin-top: 4rem;
 		display: flex;
@@ -335,7 +238,7 @@
 		display: flex;
 		align-items: center;
 		gap: 2rem;
-		max-width: 40.8rem;
+		max-width: 41rem;
 		padding: 2rem;
 		background-color: #fefefe;
 		box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.08);
@@ -344,7 +247,7 @@
 	&__img {
 		padding: 1.6rem;
 		text-align: center;
-		border: 2px dashed $clr-blue;
+		border: 2px dashed $clr-blue-80;
 		border-radius: 50%;
 	}
 	&__text {
@@ -365,5 +268,8 @@
 		font-size: 1.8rem;
 		line-height: 2.2rem;
 		color: $clr-red;
+		&:hover{
+			opacity: .6;
+		}
 	}
 }

@@ -1,0 +1,104 @@
+@use "../abstracts/variables" as *;
+@use "../base/typography" as *;
+
+.section {
+	&__title {
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		text-align: center;
+		text-transform: uppercase;
+		color: $clr-blue-90;
+		margin-bottom: 1.5rem;
+	}
+	&__content-heading {
+		font-family: $font-roboto-sans;
+		font-weight: 300;
+		font-size: 3.6rem;
+		line-height: 5rem;
+		color: $clr-red;
+	}
+	&__description {
+		font-size: 1.6rem;
+		line-height: 2.8rem;
+		text-align: center;
+		color: $clr-red;
+		max-width: 63rem;
+		margin: 0 auto;
+		margin-top: 2rem;
+	}
+
+	&__paragraph {
+		font-size: 1.8rem;
+		line-height: 2.8rem;
+		color: $clr-grey-90;
+margin-top: 3rem;
+	}
+
+	&__nav-list {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+	&__nav-item {
+		&:not(:last-child)::after {
+			content: "::";
+			margin-left: 1rem;
+			font-size: 1.6rem;
+			color: #7f2941;
+		}
+	}
+	&__nav-link {
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #7f2941;
+
+		&--active {
+			text-decoration: underline;
+		}
+		&--disabled {
+			color: grey;
+		}
+	}
+	&__sidebar {
+		width: 100%;
+		max-width: 356px;
+	}
+	&__sidebar-list {
+		display: flex;
+		flex-direction: column;
+	}
+	&__sidebar-item {
+		padding: 1rem 0;
+		border-bottom: 1px solid $clr-blue-80;
+		&--active {
+			background-color: $clr-blue-80;
+		}
+		&:hover {
+			background-color: $clr-blue-80;
+		}
+	}
+	&__sidebar-link {
+		border-left: 6px solid $clr-blue-80;
+		font-size: 24px;
+		line-height: 28px;
+		color: $clr-red;
+		padding-left: 2rem;
+		width: 100%;
+		&--acitive {
+			color: $clr-white;
+		}
+
+		&:hover {
+			color: $clr-white;
+		}
+	}
+
+	&__content {
+		max-width: 85rem;
+		width: 100%;
+	}
+}

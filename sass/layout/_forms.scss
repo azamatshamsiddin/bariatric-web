@@ -1,7 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../base/typography" as *;
 .form {
-	width: 100%;
 	background-color: #fefefe;
 	box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.08);
 	border-radius: 3rem;
@@ -10,6 +9,7 @@
 	align-items: flex-start;
 	flex-direction: column;
 	gap: 3rem;
+	flex: 1;
 	&__inputs {
 		display: flex;
 		width: 100%;
@@ -19,12 +19,15 @@
 	&__input {
 		flex: 1;
 		outline: none;
-		border: 1px solid $clr-grey;
-		background-color: $clr-grey;
+		border: 1px solid $clr-grey-30;
+		background-color: $clr-grey-30;
 		border-radius: 2rem;
 		font-size: 1.8rem;
 		line-height: 2.1rem;
 		padding: 1.5rem;
+		&:hover {
+			border: 1px solid $clr-grey-80;
+		}
 
 		&::placeholder {
 			font-size: 1.8rem;
@@ -35,6 +38,9 @@
 		&--light {
 			background-color: $clr-white;
 			border: 1px solid #a7a8a9;
+			&:hover {
+				border: 1px solid $clr-blue-30;
+			}
 		}
 	}
 	&__textarea {
@@ -49,6 +55,11 @@
 		line-height: 2.1rem;
 		outline: none;
 		font-family: $font-roboto;
+		border: 1px solid transparent;
+
+		&:hover {
+			border: 1px solid $clr-grey-80;
+		}
 		&::placeholder {
 			font-size: 1.8rem;
 			line-height: 2.1rem;
@@ -72,5 +83,8 @@
 	}
 	&__link {
 		color: #229ed9;
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 }
