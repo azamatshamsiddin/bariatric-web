@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google-Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Roboto+Serif:opsz,wght@8..144,300;8..144,700&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+
+		<!-- Own styles -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Bariatric | Founders</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="header-secondary">
+			<a class="header-secondary__logo-link" href="#">
+				<img class="header-secondary__logo-img" src="./assets/logo-light.svg" alt="logo-brand" width="458" height="164" />
+			</a>
+			<nav class="nav nav--secondary">
+				<ul class="nav__list nav__list--secondary">
+					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary" href="#">Bariatric surgery</a></li>
+					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary nav__link--active" href="#">About us</a></li>
+					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary" href="#">News</a></li>
+					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary" href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<ul class="flag__list">
+				<li class="flag__item">
+					<a class="flag__link" href="#"><img class="flag__img" width="24" height="24" src="./assets/icons/flag-rus.svg" alt="flag-rus" /></a>
+				</li>
+				<li class="flag__item">
+					<a class="flag__link" href="#"><img class="flag__img" width="24" height="24" src="./assets/icons/flag-eng.svg" alt="flag-eng" /></a>
+				</li>
+				<li class="flag__item">
+					<a class="flag__link" href="#"><img class="flag__img" width="24" height="24" src="./assets/icons/flag-uz.svg" alt="flag-uz" /></a>
+				</li>
+			</ul>
+
+			<button class="header__btn-burger">
+				<img src="./assets/icons/i-burger-menu.svg" width="24" height="24" alt="icon menu" />
+			</button>
+		</header>
+		<!-- end of header -->
+		<main class="main types">
+			<div class="types-top">
+				<div class="types-top__content">
+					<div class="about__top">
+						<ul class="about__top-list">
+							<li class="about__top-item"><a class="about__top-link" href="index.html">Home</a></li>
+							<li class="about__top-item"><a class="about__top-link" href="#">Page</a></li>
+							<li class="about__top-item"><a class="about__top-link" href="#">Current page</a></li>
+						</ul>
+					</div>
+
+					<div class="section__top">
+						<h2 class="section__title border--blue">All surgery types</h2>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="types__banner">
+					<img class="types__banner-img" src="./assets/images/relevant-img-1.jpg" alt="" />
+					<p class="types__banner-text">We offer several types of surgery types</p>
+				</div>
+
+				<p class="types__banner-bottom">Our surgery methods differ from others</p>
+
+				<ul class="relevant__cards">
+					<li class="relevant__card">
+						<div class="relevant__card-top">
+
+							<img class="relevant__card-img" src="./assets/images/relevant-img-1.jpg" width="420" alt="card image" />
+						</div>
+						<div class="relevant__card-info">
+							<h3 class="relevant__card-title">Gastric banding surgery.</h3>
+						</div>
+					</li>
+
+					<li class="relevant__card">
+						<div class="relevant__card-top">
+
+							<img class="relevant__card-img" src="./assets/images/relevant-img-2.jpg" width="420" alt="card image" />
+						</div>
+						<div class="relevant__card-info">
+							<h3 class="relevant__card-title">Gastric banding surgery.</h3>
+						</div>
+					</li>
+
+					<li class="relevant__card">
+						<div class="relevant__card-top">
+
+							<img class="relevant__card-img" src="./assets/images/relevant-img-3.jpg" width="420" alt="card image" />
+						</div>
+						<div class="relevant__card-info">
+							<h3 class="relevant__card-title">Gastric banding surgery.</h3>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__info">
+						<a class="footer__img-link" href="#">
+							<img class="footer__logo" src="./assets/logo-light.svg" alt="logo" />
+						</a>
+						<div class="footer__contact-wrapper">
+							<div class="footer__contact">
+								<img class="footer__contact-icon" src="./assets/icons/i-map-marker.svg" alt="map-marker icon" />
+								<address class="footer__address">
+									P.O. Box 10000 <br />
+									Almazar Tashkent city
+								</address>
+							</div>
+
+							<div class="footer__contact">
+								<img class="footer__contact-icon" src="./assets/icons/i-envelope.svg" alt="envelope icon" />
+								<a class="footer__contact-link" href="malto:info@bariatric.uz">info@bariatric.uz</a>
+							</div>
+
+							<div class="footer__contact">
+								<img class="footer__contact-icon" src="./assets/icons/i-phone-volume.svg" alt="phone-volume icon" />
+								<a class="footer__contact-link" href="tel:+998992002222">+998 99 200 22 22</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__list-wrapper">
+						<h4 class="footer__list-title">About us</h4>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Bariatric association</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Founders</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Our Hospital</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__list-wrapper">
+						<h4 class="footer__list-title">Surgery types</h4>
+
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Bypass surgery</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Bypass surgery</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Bypass surgery</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Bypass surgery</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__list-wrapper">
+						<h4 class="footer__list-title">Information</h4>
+
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Membership</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">News</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Join us</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">FAQ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Footer socials -->
+				<div class="social">
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="#" class="social__link"> <img src="./assets/icons/i-facebook.svg" alt="social icon" class="social__img" />Facebook </a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-twitter.svg" alt="social icon" class="social__img" />
+								Twitter
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-linkedIn.svg" alt="social icon" class="social__img" />
+								Linkedin
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-instagram.svg" alt="social icon" class="social__img" />
+								Instragram
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-telegram.svg" alt="social icon" class="social__img" />
+								Telegram
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-youtube.svg" alt="social icon" class="social__img" />
+								Youtube
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- end of socials-->
+				<!-- Copyright -->
+				<div class="copy">
+					<p class="copy__text">Copyright &copy; Bariatric Association 2022</p>
+				</div>
+			</div>
+		</footer>
+		<!--end of copyright section-->
+
+		<button id="scrollToTopBtn" class="scroll__top-btn">
+			<img src="./assets/icons/i-arrow.svg" width="30" height="30" alt="arrow icon" />
+		</button>
+		<script src="./scripts/script.js"></script>
+	</body>
+</html>
