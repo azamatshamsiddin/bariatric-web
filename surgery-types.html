@@ -21,16 +21,17 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header class="header-secondary">
-			<a class="header-secondary__logo-link" href="#">
-				<img class="header-secondary__logo-img" src="./assets/logo-light.svg" alt="logo-brand" width="458" height="164" />
+		<header class="header">
+			<a class="header__logo-link" href="index.html">
+				<img class="header__logo-img" src="./assets/logo-light.svg" alt="logo-brand" width="330" height="81" />
 			</a>
-			<nav class="nav nav--secondary">
-				<ul class="nav__list nav__list--secondary">
-					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary" href="#">Bariatric surgery</a></li>
-					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary nav__link--active" href="#">About us</a></li>
-					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary" href="#">News</a></li>
-					<li class="nav__item nav__item--secondary"><a class="nav__link nav__link--secondary" href="#">Contact</a></li>
+			<!-- Header-nav -->
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="index.html">Bariatric surgery</a></li>
+					<li class="nav__item"><a class="nav__link nav__link--active" href="about.html">About us</a></li>
+					<li class="nav__item"><a class="nav__link" href="news.html">News</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -51,62 +52,71 @@
 			</button>
 		</header>
 		<!-- end of header -->
-		<main class="main types">
-			<div class="types-top">
-				<div class="types-top__content">
-					<div class="about__top">
-						<ul class="about__top-list">
-							<li class="about__top-item"><a class="about__top-link" href="index.html">Home</a></li>
-							<li class="about__top-item"><a class="about__top-link" href="#">Page</a></li>
-							<li class="about__top-item"><a class="about__top-link" href="#">Current page</a></li>
-						</ul>
-					</div>
 
-					<div class="section__top">
-						<h2 class="section__title border--blue">All surgery types</h2>
+		<!-- =========Main======== -->
+		<main class="main">
+			<section class="section surgery-types">
+				<div class="main__top">
+					<ul class="section__nav-list">
+						<li class="section__nav-item"><a class="section__nav-link" href="index.html">Home</a></li>
+						<li class="section__nav-item"><a class="section__nav-link section__nav-link--active" href="surgery-types.htmlml">Page</a></li>
+						<li class="section__nav-item"><a href="#" class="section__nav-link section__nav-link--disabled">Current page</a></li>
+					</ul>
+					<div class="heading__wrapper">
+						<h2 class="heading">All surgery types</h2>
+						<div class="heading-border m-auto"></div>
 					</div>
 				</div>
-			</div>
-			<div class="container">
-				<div class="types__banner">
-					<img class="types__banner-img" src="./assets/images/relevant-img-1.jpg" alt="" />
-					<p class="types__banner-text">We offer several types of surgery types</p>
+				<div class="container">
+					<!-- Surgery Content -->
+					<div class="surgery-types__content">
+						<div class="surgery-types__banner">
+							<img class="surgery-types__banner-img" src="./assets/images/relevant-img-1.jpg" alt="" />
+							<p class="surgery-types__banner-text">We offer several types of surgery types</p>
+							<p class="surgery-types__banner-bottom">Our surgery methods differ from others</p>
+						</div>
+						<!-- Cards -->
+						<div class="card">
+							<ul class="card__list">
+								<li class="card__item">
+									<a href="#">
+										<div class="card__top">
+											<img class="card__img" src="./assets/images/relevant-img-1.jpg" width="420" alt="card image" />
+										</div>
+										<div class="card__info">
+											<h3 class="card__title">Gastric banding surgery.</h3>
+											<div class="heading-border card__heading-border"></div>
+										</div>
+									</a>
+								</li>
+
+								<li class="card__item">
+									<a href="#">
+										<div class="card__top">
+											<img class="-img card__img" src="./assets/images/relevant-img-2.jpg" width="420" alt="card image" />
+										</div>
+										<div class="card__info">
+											<h3 class="card__title">Gastric banding surgery.</h3>
+											<div class="heading-border card__heading-border"></div>
+										</div>
+									</a>
+								</li>
+
+								<li class="card__item">
+									<a href="#"
+										><div class="card__top">
+											<img class="card__img" src="./assets/images/relevant-img-3.jpg" width="420" alt="card image" />
+										</div>
+										<div class="card__info">
+											<h3 class="card__title">Gastric banding surgery.</h3>
+											<div class="heading-border card__heading-border"></div></div
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-
-				<p class="types__banner-bottom">Our surgery methods differ from others</p>
-
-				<ul class="relevant__cards">
-					<li class="relevant__card">
-						<div class="relevant__card-top">
-
-							<img class="relevant__card-img" src="./assets/images/relevant-img-1.jpg" width="420" alt="card image" />
-						</div>
-						<div class="relevant__card-info">
-							<h3 class="relevant__card-title">Gastric banding surgery.</h3>
-						</div>
-					</li>
-
-					<li class="relevant__card">
-						<div class="relevant__card-top">
-
-							<img class="relevant__card-img" src="./assets/images/relevant-img-2.jpg" width="420" alt="card image" />
-						</div>
-						<div class="relevant__card-info">
-							<h3 class="relevant__card-title">Gastric banding surgery.</h3>
-						</div>
-					</li>
-
-					<li class="relevant__card">
-						<div class="relevant__card-top">
-
-							<img class="relevant__card-img" src="./assets/images/relevant-img-3.jpg" width="420" alt="card image" />
-						</div>
-						<div class="relevant__card-info">
-							<h3 class="relevant__card-title">Gastric banding surgery.</h3>
-						</div>
-					</li>
-				</ul>
-			</div>
+			</section>
 		</main>
 
 		<!-- Footer -->

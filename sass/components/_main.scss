@@ -10,6 +10,13 @@
 		padding-top: 12%;
 		padding-bottom: 6rem;
 	}
+	&__top {
+		background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.85) 0%), url("../../assets/images/image.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 3rem 0;
+	}
 
 	&__content {
 		margin-top: 5rem;
