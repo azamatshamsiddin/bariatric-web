@@ -1119,11 +1119,14 @@ body {
 .hospital__content {
   background-color: #fff;
   padding: 3rem 6rem 6rem;
-  min-height: 230rem;
+  min-height: 130rem;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
 }
 .hospital__content p {
   font-size: 2rem;
+}
+.hospital__content-right {
+  flex: 1;
 }
 .hospital__top {
   margin-bottom: 2rem;
