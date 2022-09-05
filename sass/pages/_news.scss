@@ -3,8 +3,7 @@
 
 .news {
 	background-color: $clr-white;
-	// padding: 3rem 6rem 6rem;
-  margin-bottom: 10rem;
+	margin-bottom: 10rem;
 	min-height: 140rem;
 	& .main__content {
 		flex-direction: row-reverse;
@@ -64,7 +63,66 @@
 	}
 
 	&__card-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.news {
+		& .main__content {
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+
+		& .section__content {
+			max-width: 100%;
+			flex: 1;
+		}
+
+		&__banner-title {
+			font-size: 2.5rem;
+			line-height: 3rem;
+			margin-top: 1.5rem;
+		}
+		&__banner-label {
+			padding: 1.5rem;
+		}
+
+		&__banner-badge {
+			font-size: 1.4rem;
+		}
+
+		&__card {
+			margin-top: 3rem;
+		}
+		&__card-list {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.news {
+		& .main__content {
+			flex-direction: column;
+		}
+
+		&__card-list {
+			grid-template-columns: 1fr 1fr ;
+		}
+
+		& .section__sidebar-list{
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.news {
+		&__card-list {
+			grid-template-columns: 1fr;
+		}
 	}
 }

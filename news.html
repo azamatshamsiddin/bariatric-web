@@ -11,7 +11,9 @@
 			href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Roboto+Serif:opsz,wght@8..144,300;8..144,700&family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-
+		<!-- Fontawesome -->
+		<script src="https://kit.fontawesome.com/dc583155e0.js" crossorigin="anonymous"></script>
+		<!-- Mapbox -->
 		<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
 		<link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
 
@@ -26,7 +28,8 @@
 				<img class="header__logo-img" src="./assets/logo-light.svg" alt="logo-brand" width="330" height="81" />
 			</a>
 			<!-- Header-nav -->
-			<nav class="nav">
+			<nav class="nav nav--close">
+				<i class="fa-solid fa-xmark nav__close-btn"></i>
 				<ul class="nav__list">
 					<li class="nav__item"><a class="nav__link" href="index.html">Bariatric surgery</a></li>
 					<li class="nav__item"><a class="nav__link" href="about.html">About us</a></li>
@@ -47,7 +50,7 @@
 				</li>
 			</ul>
 
-			<button class="header__btn-burger">
+			<button class="header__btn-burger header__btn-burger--primary">
 				<img src="./assets/icons/i-burger-menu.svg" width="24" height="24" alt="icon menu" />
 			</button>
 		</header>
@@ -59,7 +62,7 @@
 				<div class="main__top">
 					<ul class="section__nav-list">
 						<li class="section__nav-item"><a class="section__nav-link" href="index.html">Home</a></li>
-						<li class="section__nav-item"><a class="section__nav-link section__nav-link--active" href="news.htmll">Page</a></li>
+						<li class="section__nav-item"><a class="section__nav-link section__nav-link--active" href="news.html">Page</a></li>
 						<li class="section__nav-item"><a href="#" class="section__nav-link section__nav-link--disabled">Current page</a></li>
 					</ul>
 					<div class="heading__wrapper">
@@ -288,36 +291,38 @@
 				<div class="social">
 					<ul class="social__list">
 						<li class="social__item">
-							<a href="#" class="social__link"> <img src="./assets/icons/i-facebook.svg" alt="social icon" class="social__img" />Facebook </a>
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-facebook.svg" alt="social icon" class="social__img" /> <span class="social__link-text">Facebook</span>
+							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
 								<img src="./assets/icons/i-twitter.svg" alt="social icon" class="social__img" />
-								Twitter
+								<span class="social__link-text">Twitter</span>
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
 								<img src="./assets/icons/i-linkedIn.svg" alt="social icon" class="social__img" />
-								Linkedin
+								<span class="social__link-text">Linkedin</span>
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
 								<img src="./assets/icons/i-instagram.svg" alt="social icon" class="social__img" />
-								Instragram
+								<span class="social__link-text">Instragram</span>
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
 								<img src="./assets/icons/i-telegram.svg" alt="social icon" class="social__img" />
-								Telegram
+								<span class="social__link-text">Telegram</span>
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
 								<img src="./assets/icons/i-youtube.svg" alt="social icon" class="social__img" />
-								Youtube
+								<span class="social__link-text">Youtube</span>
 							</a>
 						</li>
 					</ul>
