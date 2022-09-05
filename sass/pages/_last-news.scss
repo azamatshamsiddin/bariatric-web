@@ -6,11 +6,18 @@
 	min-height: 200rem;
 	box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
 
-  & .section__content{
-    max-width: 100%;
-  }
+	& .section__content {
+		max-width: 100%;
+	}
 
-  &__img{
-    width: 100%;
-  }
+	&__img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.last-news {
+		padding: 3rem;
+		min-height: 170rem;
+	}
 }

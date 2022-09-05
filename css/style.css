@@ -1706,4 +1706,11 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 950px) {
+  .last-news {
+    padding: 3rem;
+    min-height: 170rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
