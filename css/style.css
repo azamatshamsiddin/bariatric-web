@@ -251,6 +251,14 @@ body {
   line-height: 5rem;
   color: #7f2941;
 }
+.section__article-heading {
+  font-family: "Roboto Serif", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #59595c;
+  margin-top: 3rem;
+}
 .section__description {
   font-size: 1.6rem;
   line-height: 2.8rem;
@@ -1108,6 +1116,19 @@ body {
 .news__card-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.last-news {
+  background-color: #fff;
+  padding: 3rem 6rem 6rem;
+  min-height: 200rem;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
+}
+.last-news .section__content {
+  max-width: 100%;
+}
+.last-news__img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

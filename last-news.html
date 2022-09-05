@@ -1,12 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google-Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Roboto+Serif:opsz,wght@8..144,300;8..144,700&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 
-</body>
+		<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+
+		<!-- Own styles -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Bariatric | Last News</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<a class="header__logo-link" href="index.html">
+				<img class="header__logo-img" src="./assets/logo-light.svg" alt="logo-brand" width="330" height="81" />
+			</a>
+			<!-- Header-nav -->
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="index.html">Bariatric surgery</a></li>
+					<li class="nav__item"><a class="nav__link" href="about.html">About us</a></li>
+					<li class="nav__item"><a class="nav__link nav__link--active" href="news.html">News</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<ul class="flag__list">
+				<li class="flag__item">
+					<a class="flag__link" href="#"><img class="flag__img" width="24" height="24" src="./assets/icons/flag-rus.svg" alt="flag-rus" /></a>
+				</li>
+				<li class="flag__item">
+					<a class="flag__link" href="#"><img class="flag__img" width="24" height="24" src="./assets/icons/flag-eng.svg" alt="flag-eng" /></a>
+				</li>
+				<li class="flag__item">
+					<a class="flag__link" href="#"><img class="flag__img" width="24" height="24" src="./assets/icons/flag-uz.svg" alt="flag-uz" /></a>
+				</li>
+			</ul>
+
+			<button class="header__btn-burger">
+				<img src="./assets/icons/i-burger-menu.svg" width="24" height="24" alt="icon menu" />
+			</button>
+		</header>
+		<!-- end of header -->
+
+		<!-- Main -->
+		<main class="main main-bg" style="background-image: url('./assets/images/founders-bg.jpg')">
+			<section class="section">
+				<div class="container last-news">
+					<ul class="section__nav-list">
+						<li class="section__nav-item"><a class="section__nav-link" href="index.html">Home</a></li>
+						<li class="section__nav-item"><a class="section__nav-link section__nav-link--active" href="about.html">Page</a></li>
+						<li class="section__nav-item"><a href="#" class="section__nav-link section__nav-link--disabled">Current page</a></li>
+					</ul>
+					<div class="heading__wrapper">
+						<h2 class="heading">Last News</h2>
+						<div class="heading-border m-auto"></div>
+					</div>
+					<div class="main__content">
+						<div class="section__content">
+							<img class="last-news__img" src="./assets/images/relevant-img-1.jpg" alt="human image" />
+
+							<p class="section__paragraph">
+								Established over 30 years ago, we’re proud to be a leading education group. From pre-schools to Ph.D. level, we offer globally bench-marked education, with campuses
+								across Dubai, London, Singapore, New York and China – with plans to extend to an additional 25 countries.
+							</p>
+							<p class="section__paragraph">
+								We are home to over 170,000 students worldwide, with a strong focus on developing ground-breaking innovations in science and technology. Our world-class facilities,
+								infrastructure and record job offers have resulted in our institutes becoming part of the most sought after education destinations.
+							</p>
+
+							<article class="article">
+								<h4 class="section__article-heading">Amity University, Dubai</h4>
+								<p class="section__paragraph">
+									Our world-class education and research, together with our renowned faculty members enable our students to become forward-thinking individuals, who are not only
+									ready, but eager to change the world for the better. We’re proud to have over 60,000 alumni and be linked to over 80 global universities and research partners.
+								</p>
+							</article>
+							<article class="article">
+								<h4 class="section__article-heading">Amity University, India</h4>
+								<p class="section__paragraph">We currently have five world-class universities situated in Noida (New Delhi-NCR), Lucknow, Manesar (Gurgaon), Jaipur and Gwalior.</p>
+							</article>
+
+							<article class="article">
+								<h4 class="heading heading--secondary">Our Mission</h4>
+								<div class="heading-border"></div>
+								<p class="section__paragraph">
+									Amity University Dubai will strive to build a conscious community that will positively impact society and humanity. We will continue to educate, while also
+									creating long-term sustainable solutions that promote innovation, exploration, creativity, tolerance, equality, opportunity and a better future for generations to
+									come.
+								</p>
+								<ul class="article__list">
+									<li class="article__item">We aim to provide educational opportunities for all</li>
+									<li class="article__item">We believe in the advancement and protection of knowledge</li>
+									<li class="article__item">The protection of rights and the freedom of individuals and respect for diversity</li>
+									<li class="article__item">Excellence in the individual achievements of staff and students, supported by the university in reaching their personal goals</li>
+									<li class="article__item">We’re committed to health, well-being, sustainability and the sustainable development of the community</li>
+								</ul>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__info">
+						<a class="footer__img-link" href="index.html">
+							<img class="footer__logo" src="./assets/logo-light.svg" alt="logo" />
+						</a>
+						<div class="footer__contact-wrapper">
+							<div class="footer__contact">
+								<img class="footer__contact-icon" src="./assets/icons/i-map-marker.svg" alt="map-marker icon" />
+								<address class="footer__address">
+									P.O. Box 10000 <br />
+									Almazar Tashkent city
+								</address>
+							</div>
+
+							<div class="footer__contact">
+								<img class="footer__contact-icon" src="./assets/icons/i-envelope.svg" alt="envelope icon" />
+								<a class="footer__contact-link" href="malto:info@bariatric.uz">info@bariatric.uz</a>
+							</div>
+
+							<div class="footer__contact">
+								<img class="footer__contact-icon" src="./assets/icons/i-phone-volume.svg" alt="phone-volume icon" />
+								<a class="footer__contact-link" href="tel:+998992002222">+998 99 200 22 22</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__list-wrapper">
+						<h4 class="footer__list-title">About us</h4>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Bariatric association</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Founders</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Our Hospital</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__list-wrapper">
+						<h4 class="footer__list-title">Surgery types</h4>
+
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Bypass surgery</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Bypass surgery</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Bypass surgery</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Bypass surgery</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__list-wrapper">
+						<h4 class="footer__list-title">Information</h4>
+
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Membership</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">News</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Join us</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">FAQ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Footer socials -->
+				<div class="social">
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="#" class="social__link"> <img src="./assets/icons/i-facebook.svg" alt="social icon" class="social__img" />Facebook </a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-twitter.svg" alt="social icon" class="social__img" />
+								Twitter
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-linkedIn.svg" alt="social icon" class="social__img" />
+								Linkedin
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-instagram.svg" alt="social icon" class="social__img" />
+								Instragram
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-telegram.svg" alt="social icon" class="social__img" />
+								Telegram
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="./assets/icons/i-youtube.svg" alt="social icon" class="social__img" />
+								Youtube
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- end of socials-->
+				<!-- Copyright -->
+				<div class="copy">
+					<p class="copy__text">Copyright &copy; Bariatric Association 2022</p>
+				</div>
+			</div>
+		</footer>
+		<!--end of copyright section-->
+
+		<button id="scrollToTopBtn" class="scroll__top-btn">
+			<img src="./assets/icons/i-arrow.svg" width="30" height="30" alt="arrow icon" />
+		</button>
+		<script src="./scripts/script.js"></script>
+	</body>
 </html>
