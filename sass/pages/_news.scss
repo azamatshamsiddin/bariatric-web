@@ -1,0 +1,70 @@
+@use "../abstracts/variables" as *;
+@use "../base/typography" as *;
+
+.news {
+	background-color: $clr-white;
+	// padding: 3rem 6rem 6rem;
+  margin-bottom: 10rem;
+	min-height: 140rem;
+	& .main__content {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	& .section__content {
+		max-width: 100%;
+		flex: 1;
+	}
+	&__banner {
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__banner-img {
+		height: auto;
+	}
+
+	&__banner-label {
+		position: absolute;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.45);
+		padding: 2rem;
+		bottom: 0;
+		left: 0;
+	}
+	&__banner-title {
+		color: $clr-white;
+		font-weight: 500;
+		font-size: 3.6rem;
+		line-height: 4rem;
+		letter-spacing: -0.01em;
+		margin-top: 2rem;
+	}
+
+	&__banner-badge {
+		display: inline-block;
+		font-family: $font-roboto-sans;
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 1.2rem;
+		text-align: center;
+		text-transform: uppercase;
+		color: $clr-blue-80;
+		padding: 1rem 1.3rem;
+		background-color: $clr-red;
+
+		&--blue {
+			background-color: $clr-blue-80;
+			color: $clr-red;
+		}
+	}
+
+	&__card {
+		margin-top: 3rem;
+	}
+
+	&__card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	}
+}
