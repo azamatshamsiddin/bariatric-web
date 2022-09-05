@@ -17,5 +17,18 @@
 	&__article-title {
 		margin: 2rem 0;
 	}
+}
 
+@media screen and (max-width: 1200px) {
+	.doctors {
+		min-height: 50rem;
+
+		&__articles {
+			margin-top: 2rem;
+		}
+
+		&__article-title {
+			margin: 1rem 0;
+		}
+	}
 }

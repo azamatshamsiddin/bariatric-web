@@ -1482,6 +1482,17 @@ body {
   margin: 2rem 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .doctors {
+    min-height: 50rem;
+  }
+  .doctors__articles {
+    margin-top: 2rem;
+  }
+  .doctors__article-title {
+    margin: 1rem 0;
+  }
+}
 .hospital {
   background-color: #fff;
   padding: 3rem 6rem 6rem;
