@@ -13,7 +13,10 @@
 			href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Roboto+Serif:opsz,wght@8..144,300;8..144,700&family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- Fontawesome -->
+		<script src="https://kit.fontawesome.com/dc583155e0.js" crossorigin="anonymous"></script>
 
+		<!-- Mapbox -->
 		<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
 		<link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
 
@@ -27,7 +30,8 @@
 				<img class="header-primary__logo-img header__logo-img" src="./assets/logo-dark.svg" alt="logo-brand" width="460" height="164" />
 			</a>
 			<!-- Header-nav -->
-			<nav class="nav">
+			<nav class="nav nav--close">
+				<i class="fa-solid fa-xmark nav__close-btn"></i>
 				<ul class="nav__list">
 					<li class="nav__item"><a class="nav__link nav__link--active nav__link--primary" href="index.html">Bariatric surgery</a></li>
 					<li class="nav__item"><a class="nav__link nav__link--primary" href="about.html">About us</a></li>
@@ -54,8 +58,8 @@
 		</header>
 		<!-- ======MAIN======= -->
 		<main class="main">
-			<!-- Section Hero -->
-			<section class="hero">
+		<!-- Section Hero -->
+		<section class="hero">
 				<h2 class="visually-hidden">Hero section</h2>
 				<div class="hero__slider">
 					<div class="hero__slider-wrapper">
@@ -75,8 +79,8 @@
 				</div>
 			</section>
 
-			<!-- Section Surgery -->
-			<section class="surgery">
+		<!-- Section Surgery -->
+		<section class="surgery">
 				<h2 class="visually-hidden">Bariatric Surgery Section</h2>
 
 				<div class="container">
@@ -101,8 +105,8 @@
 				</div>
 			</section>
 
-			<!-- Section Relevant News -->
-			<section class="relevant">
+		<!-- Section Relevant News -->
+		<section class="relevant">
 				<div class="container">
 					<p class="section__title">Relevant news</p>
 					<div class="heading__wrapper relevant__heading-wrapper">
@@ -115,7 +119,6 @@
 						quisquam et hic tempore
 					</p>
 
-					<!-- Relevant Card -->
 					<div class="card">
 						<ul class="relevant__cards card__list">
 							<li class="relevant__card card__item">
@@ -174,9 +177,9 @@
 				</div>
 			</section>
 
-			<!-- Section Results -->
+		<!-- Section Results -->
 
-			<section class="result">
+		<section class="result">
 				<div class="container">
 					<div class="result__cards">
 						<div class="result__card">
@@ -204,8 +207,8 @@
 				</div>
 			</section>
 
-			<!-- Section Brands -->
-			<section class="brands">
+		<!-- Section Brands -->
+		<section class="brands">
 				<ul class="brands__list">
 					<li class="brands__item"><img class="brands__img" src="./assets/images/brand-1.png" alt="brand logo" /></li>
 					<li class="brands__item"><img class="brands__img" src="./assets/images/brand-2.png" alt="brand logo" /></li>
@@ -215,8 +218,8 @@
 				</ul>
 			</section>
 
-			<!-- Section Contact -->
-			<section class="contact">
+		<!-- Section Contact -->
+		<section class="contact">
 				<div class="container">
 					<p class="section__title">Contact us</p>
 					<div class="heading__wrapper relevant__heading-wrapper">
@@ -227,7 +230,6 @@
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit porro, aliquid reprehenderit iusto inventore sint beatae ipsum impedit in sit illum distinctio sequi
 						quisquam et hic tempore
 					</p>
-					<!-- Contact Links -->
 					<div class="contact__content">
 						<div class="contact__links">
 							<div class="contact__wrapper">
@@ -257,7 +259,6 @@
 								</div>
 							</div>
 						</div>
-						<!--  Form  -->
 						<form class="form">
 							<div class="form__inputs">
 								<input class="form__input" type="text" placeholder="Your name" />
@@ -276,8 +277,8 @@
 				</div>
 			</section>
 
-			<!-- Section Map -->
-			<section class="map">
+		<!-- Section Map -->
+		<section class="map">
 				<div id="map" style="width: 100%; height: 420px"></div>
 				<script>
 					mapboxgl.accessToken = "pk.eyJ1IjoiYXphbWF0c2hhbXMiLCJhIjoiY2t1ODZxZWV6MHlyODJ5cGE2enJheHcyOSJ9.sVyJ36vJGENQl8t5HQmtOw";
@@ -371,46 +372,49 @@
 					</div>
 				</div>
 
-				<!-- Footer socials -->
 				<div class="social">
 					<ul class="social__list">
 						<li class="social__item">
-							<a href="#" class="social__link"> <img src="./assets/icons/i-facebook.svg" alt="social icon" class="social__img" />Facebook </a>
+							<a href="#" class="social__link"> <img src="./assets/icons/i-facebook.svg" alt="social icon" class="social__img" />
+								<span class="social__link-text">Facebook</span> </a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
 								<img src="./assets/icons/i-twitter.svg" alt="social icon" class="social__img" />
-								Twitter
+								<span class="social__link-text">Twitter</span>
+
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
 								<img src="./assets/icons/i-linkedIn.svg" alt="social icon" class="social__img" />
-								Linkedin
+								<span class="social__link-text">Linkedin</span>
+
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
 								<img src="./assets/icons/i-instagram.svg" alt="social icon" class="social__img" />
-								Instragram
+								<span class="social__link-text">Instragram</span>
+
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
 								<img src="./assets/icons/i-telegram.svg" alt="social icon" class="social__img" />
-								Telegram
+								<span class="social__link-text">Telegram</span>
+
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
 								<img src="./assets/icons/i-youtube.svg" alt="social icon" class="social__img" />
-								Youtube
+								<span class="social__link-text">Youtube</span>
+
 							</a>
 						</li>
 					</ul>
 				</div>
-				<!-- end of socials-->
-				<!-- Copyright -->
 				<div class="copy">
 					<p class="copy__text">Copyright &copy; Bariatric Association 2022</p>
 				</div>

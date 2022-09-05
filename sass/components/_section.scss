@@ -65,7 +65,7 @@
 		}
 	}
 	&__nav-link {
-		font-size: 16px;
+		font-size: 1.6rem;
 		text-align: center;
 		text-transform: uppercase;
 		color: $clr-red;
@@ -79,7 +79,7 @@
 	}
 	&__sidebar {
 		width: 100%;
-		max-width: 356px;
+		max-width: 35.6rem;
 	}
 	&__sidebar-list {
 		display: flex;
@@ -97,8 +97,8 @@
 	}
 	&__sidebar-link {
 		border-left: 6px solid $clr-blue-80;
-		font-size: 24px;
-		line-height: 28px;
+		font-size: 2.4rem;
+		line-height: 2.8rem;
 		color: $clr-red;
 		padding-left: 2rem;
 		width: 100%;
@@ -114,5 +114,31 @@
 	&__content {
 		max-width: 85rem;
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.section {
+		&__content-heading {
+			font-size: 2.7rem;
+			line-height: 4rem;
+		}
+		&__sidebar {
+			max-width: unset;
+		}
+		&__sidebar-list {
+			align-items: baseline;
+
+			justify-content: space-between;
+			flex-direction: row;
+			gap: 1rem;
+		}
+
+		&__sidebar-link {
+			border-left: unset;
+			padding: 0 2rem;
+			font-size: 1.7rem;
+			line-height: 2.2rem;
+		}
 	}
 }

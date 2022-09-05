@@ -70,3 +70,28 @@
 		transform: translateY(0px);
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	.btn {
+		border-radius: 10rem;
+
+		&--blue {
+			font-size: 2.5rem;
+			line-height: 3rem;
+			padding: 1.5rem 2rem;
+		}
+
+		&--red {
+			font-size: 1.5rem;
+			padding: 1.2rem 2rem;
+		}
+	}
+}
+@media screen and (max-width: 950px) {
+	.scroll__top-btn {
+		padding: 1.3rem;
+		aspect-ratio: 1;
+		width: 5rem;
+		height: 5rem;
+	}
+}

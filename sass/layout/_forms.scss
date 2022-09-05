@@ -88,3 +88,38 @@
 		}
 	}
 }
+
+@media screen and (max-width: 950px) {
+	.form {
+		padding: 2rem;
+		gap: 2rem;
+		&__inputs {
+			flex-direction: column;
+			gap: 2rem;
+		}
+		&__input {
+			width: 100%;
+			font-size: 1.6rem;
+			line-height: 2rem;
+
+			&::placeholder {
+				font-size: 1.6rem;
+				line-height: 2rem;
+			}
+		}
+		&__textarea {
+			font-size: 1.6rem;
+			line-height: 2rem;
+
+			&::placeholder {
+				font-size: 1.6rem;
+				line-height: 2rem;
+			}
+		}
+
+		&__accept-text,
+		&__link {
+			font-size: 1.6rem;
+		}
+	}
+}
