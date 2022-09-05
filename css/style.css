@@ -342,7 +342,7 @@ body {
 }
 .section__paragraph span {
   display: block;
-  margin-top: 8rem;
+  margin-top: 5rem;
   margin-bottom: 2rem;
 }
 .section__nav-list {
@@ -408,6 +408,13 @@ body {
 }
 
 @media screen and (max-width: 950px) {
+  .section__paragraph {
+    margin-top: 1.5rem;
+  }
+  .section__paragraph span {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
   .section__content-heading {
     font-size: 2.7rem;
     line-height: 4rem;
@@ -1443,11 +1450,21 @@ body {
 .human__name {
   font-weight: 700;
   font-size: 4.1rem;
-  line-height: 2.8rem;
+  line-height: 4.2rem;
   color: #59595c;
   margin-top: 3rem;
 }
+.human__img {
+  height: auto;
+}
 
+@media screen and (max-width: 950px) {
+  .human__name {
+    margin-top: 1rem;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
 .doctors {
   background-color: #fff;
   padding: 3rem 6rem 6rem;

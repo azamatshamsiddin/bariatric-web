@@ -48,8 +48,23 @@
 	&__name {
 		font-weight: 700;
 		font-size: 4.1rem;
-		line-height: 2.8rem;
+		line-height: 4.2rem;
 		color: $clr-grey-90;
 		margin-top: 3rem;
+	}
+	&__img{
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.human {
+		&__name {
+		margin-top: 1rem;
+
+			font-size: 3rem;
+			line-height: 4rem;
+		}
+
 	}
 }
