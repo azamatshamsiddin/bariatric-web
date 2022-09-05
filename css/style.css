@@ -1503,6 +1503,9 @@ body {
 .surgery-types {
   margin-bottom: 18rem;
 }
+.surgery-types__link {
+  width: 100%;
+}
 .surgery-types__content {
   margin-top: 3rem;
 }
@@ -1539,6 +1542,31 @@ body {
   margin-bottom: 8rem;
 }
 
+@media screen and (max-width: 1100px) {
+  .surgery-types {
+    margin-bottom: 10rem;
+  }
+  .surgery-types__banner-text {
+    top: 30%;
+    font-size: 4rem;
+    line-height: 4.2rem;
+  }
+  .surgery-types__banner-bottom {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  .surgery-types__banner-text {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .surgery-types__banner-bottom {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 5rem;
+  }
+}
 .gastric {
   background-color: #fff;
   padding: 3rem 6rem 6rem;
