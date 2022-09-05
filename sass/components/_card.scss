@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../base/typography" as *;
 .card {
+
 	&__list {
 		display: flex;
 		justify-content: space-between;
@@ -14,7 +15,13 @@
 		min-height: 40rem;
 		background-color: $clr-white;
 		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
+	transition: all ease .3s;
 
+		&:hover {
+			transform: scale(1.02);
+		box-shadow: 0px 0px 25px 10px  rgba(0, 0, 0, 0.08);
+
+		}
 	}
 	&__top {
 		position: relative;
@@ -69,6 +76,5 @@
 	}
 	&__info {
 		padding: 2rem;
-
 	}
 }

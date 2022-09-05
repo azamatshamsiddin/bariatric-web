@@ -9,17 +9,14 @@
 // COMPONENTS
 @use "./components/btn" as *;
 @use "./components/card" as *;
-@use "./components/dropdown" as *;
 @use "./components/heading" as *;
 @use "./components/section" as *;
 @use "./components/main" as *;
 
 // LAYOUT
 @use "./layout/header" as *;
-@use "./layout/nav" as *;
 @use "./layout/footer" as *;
 @use "./layout/forms" as *;
-@use "./layout/list" as *;
 
 // PAGES
 @use "./pages/home" as *;

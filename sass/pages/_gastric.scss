@@ -1,30 +1,19 @@
 @use "../abstracts/variables" as *;
 @use "../base/typography" as *;
 .gastric {
-	&__heading {
-		font-family: $font-cormorant;
-		font-weight: 700;
-		font-size: 3.2rem;
-		line-height: 3.9rem;
-		align-items: center;
-		letter-spacing: -0.01em;
+	background-color: $clr-white;
+	padding: 3rem 6rem 6rem;
+	min-height: 140rem;
+	box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
+
+	&__img {
+		margin-top: 3rem;
+	}
+	&__content-heading {
 		text-transform: uppercase;
-		color: $clr-red;
+		font-size: 3.2rem;
+		font-family: $font-cormorant;
+		line-height: 3.9rem;
+		font-weight: 700;
 	}
-}
-.gastric {
-	background-image: url("../../assets/images/gastric-bg.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: top 0 center;
-	padding-top: 18rem;
-	padding-bottom: 8.5rem;
-
-	&__content {
-		padding-bottom: 18rem;
-	}
-}
-
-.section__img {
-	margin-top: 3rem;
 }
